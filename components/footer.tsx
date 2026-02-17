@@ -1,6 +1,8 @@
 "use client"
 
 const LINKS = [
+  { name: "Commons Stack", url: "https://commonsstack.org" },
+  { name: "P2P Foundation", url: "https://wiki.p2pfoundation.net/" },
   { name: "MycoFi", url: "https://mycofi.earth" },
   { name: "Mycopunk", url: "https://mycopunk.xyz" },
   { name: "Undernet", url: "https://undernet.earth" },

@@ -4,14 +4,16 @@ import { useScrollProgress } from "@/hooks/use-scroll-progress"
 import { useEffect } from "react"
 
 // Color stops: [scrollPos, bg-L, bg-C, bg-H, fg-L, fg-C, fg-H, accent-L, accent-C, accent-H]
+// 8 sections: Hero → Legacy → Compost → Mycelium → Undernet → Anastomosis → Emergence → Network Map
 const COLOR_STOPS: number[][] = [
-  [0.0, 0.08, 0.02, 30, 0.85, 0.03, 80, 0.45, 0.12, 60],
-  [0.15, 0.12, 0.04, 40, 0.82, 0.04, 80, 0.55, 0.15, 45],
-  [0.3, 0.16, 0.05, 150, 0.88, 0.05, 145, 0.55, 0.18, 155],
-  [0.5, 0.22, 0.04, 200, 0.9, 0.03, 200, 0.5, 0.14, 220],
-  [0.65, 0.45, 0.06, 140, 0.15, 0.03, 150, 0.65, 0.18, 145],
-  [0.8, 0.85, 0.04, 110, 0.15, 0.04, 100, 0.6, 0.16, 90],
-  [0.92, 0.94, 0.02, 110, 0.12, 0.03, 100, 0.55, 0.18, 155],
+  [0.0,  0.08, 0.02, 30,   0.85, 0.03, 80,   0.45, 0.12, 60 ],  // Hero: deep soil
+  [0.10, 0.10, 0.03, 35,   0.84, 0.03, 80,   0.50, 0.13, 50 ],  // Legacy: dark warm earth
+  [0.20, 0.12, 0.04, 40,   0.82, 0.04, 80,   0.55, 0.15, 45 ],  // Compost: earth brown
+  [0.35, 0.16, 0.05, 150,  0.88, 0.05, 145,  0.55, 0.18, 155],  // Mycelium: forest green
+  [0.48, 0.22, 0.04, 200,  0.90, 0.03, 200,  0.50, 0.14, 220],  // Undernet: deep blue
+  [0.60, 0.45, 0.06, 140,  0.15, 0.03, 150,  0.65, 0.18, 145],  // Anastomosis: transition
+  [0.78, 0.85, 0.04, 110,  0.15, 0.04, 100,  0.60, 0.16, 90 ],  // Emergence: golden light
+  [0.92, 0.94, 0.02, 110,  0.12, 0.03, 100,  0.55, 0.18, 155],  // Network Map: canopy
 ]
 
 function lerp(a: number, b: number, t: number) {

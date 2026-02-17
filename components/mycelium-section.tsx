@@ -5,7 +5,7 @@ import { useSectionReveal } from "@/hooks/use-section-reveal"
 const PRINCIPLES = [
   {
     title: "Nutrient Cycling",
-    body: "Resources flow where they're needed, not where they're hoarded. Mycelial currencies route value like fungi route nutrients — sensing scarcity, bridging gaps, feeding the weak to strengthen the whole. This is the economics of the forest floor.",
+    body: "Resources flow where they're needed, not where they're hoarded. The Commons Stack pioneered augmented bonding curves and quadratic funding for the commons. MycoFi extends this into mycelial currencies that route value like fungi route nutrients — sensing scarcity, bridging gaps, feeding the weak to strengthen the whole.",
     icon: (
       <svg viewBox="0 0 48 48" className="w-12 h-12" fill="none" stroke="currentColor" strokeWidth="1.5">
         <circle cx="24" cy="24" r="4" />
@@ -20,7 +20,7 @@ const PRINCIPLES = [
   },
   {
     title: "Mutual Aid",
-    body: "Every node strengthens the network. Every network strengthens each node. In a mycelial system, there are no freeloaders and no extractors — only participants in a web of reciprocal support. This is the peer-for-peer protocol.",
+    body: "Every node strengthens the network. Every network strengthens each node. Michel Bauwens called this commons-based peer production — contributory, needs-based collaboration as the third mode of production beyond state and market. In a mycelial system, there are no extractors — only participants in a web of reciprocal support.",
     icon: (
       <svg viewBox="0 0 48 48" className="w-12 h-12" fill="none" stroke="currentColor" strokeWidth="1.5">
         <circle cx="16" cy="16" r="6" />
@@ -33,7 +33,7 @@ const PRINCIPLES = [
   },
   {
     title: "Distributed Intelligence",
-    body: "No central brain. No single point of failure. Intelligence emerges from connection, from the ten thousand chemical conversations happening simultaneously across the network. The wisdom is in the web, not the node.",
+    body: "No central brain. No single point of failure. The Trusted Seed proved that conviction voting and consent-based governance could coordinate without hierarchy. Intelligence emerges from connection, from the ten thousand chemical conversations happening simultaneously across the network. Design global, manufacture local — cosmo-localism in practice.",
     icon: (
       <svg viewBox="0 0 48 48" className="w-12 h-12" fill="none" stroke="currentColor" strokeWidth="1.5">
         <circle cx="24" cy="12" r="3" />

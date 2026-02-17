@@ -23,6 +23,20 @@ const NODES: NetworkNode[] = [
     primary: true,
   },
   {
+    name: "Commons Stack",
+    domain: "commonsstack.org",
+    description: "Fund and govern the commons",
+    x: 50,
+    y: 10,
+  },
+  {
+    name: "P2P Foundation",
+    domain: "wiki.p2pfoundation.net",
+    description: "25,000 pages of commons knowledge",
+    x: 50,
+    y: 92,
+  },
+  {
     name: "MycoFi",
     domain: "mycofi.earth",
     description: "Mycoeconomics & regenerative currencies",
@@ -81,17 +95,22 @@ const NODES: NetworkNode[] = [
 ]
 
 const CONNECTIONS: [string, string][] = [
+  ["mycostack.xyz", "commonsstack.org"],
+  ["mycostack.xyz", "wiki.p2pfoundation.net"],
   ["mycostack.xyz", "mycofi.earth"],
   ["mycostack.xyz", "undernet.earth"],
   ["mycostack.xyz", "compostcapitalism.xyz"],
   ["mycostack.xyz", "yourspace.online"],
+  ["commonsstack.org", "wiki.p2pfoundation.net"],
+  ["commonsstack.org", "mycofi.earth"],
+  ["commonsstack.org", "mycopunk.xyz"],
+  ["wiki.p2pfoundation.net", "post-appitalist.app"],
   ["mycofi.earth", "mycopunk.xyz"],
   ["undernet.earth", "psilo-cyber.net"],
   ["compostcapitalism.xyz", "post-appitalist.app"],
   ["post-appitalist.app", "yourspace.online"],
   ["yourspace.online", "trippinballs.lol"],
   ["mycopunk.xyz", "psilo-cyber.net"],
-  ["mycofi.earth", "post-appitalist.app"],
   ["mycopunk.xyz", "undernet.earth"],
 ]
 

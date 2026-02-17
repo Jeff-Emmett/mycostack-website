@@ -32,15 +32,24 @@ export function HeroSection() {
           className="emerge-letter text-xl sm:text-2xl md:text-3xl font-serif font-light tracking-wide opacity-80"
           style={{ animationDelay: "1.2s" }}
         >
-          Technology-augmented commons.
+          Rebooting the Commons Stack.
           <br />
           Growing from beneath.
+        </p>
+
+        {/* Lineage */}
+        <p
+          className="emerge-letter text-sm sm:text-base opacity-40 max-w-xl mx-auto"
+          style={{ animationDelay: "1.5s" }}
+        >
+          Born from the P2P Foundation. Rooted in the legacy of Michel
+          Bauwens. Powered by mycelial principles.
         </p>
 
         {/* Terminal tagline */}
         <div
           className="emerge-letter font-mono text-sm sm:text-base opacity-60"
-          style={{ animationDelay: "1.8s" }}
+          style={{ animationDelay: "2s" }}
         >
           <span className="opacity-50">&gt;</span> composting capitalism,
           growing alternatives

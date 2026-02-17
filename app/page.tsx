@@ -1,5 +1,6 @@
 import { MycelialCanvas } from "@/components/mycelial-canvas"
 import { HeroSection } from "@/components/hero-section"
+import { LegacySection } from "@/components/legacy-section"
 import { CompostSection } from "@/components/compost-section"
 import { MyceliumSection } from "@/components/mycelium-section"
 import { UndernetSection } from "@/components/undernet-section"
@@ -14,6 +15,7 @@ export default function Home() {
       <MycelialCanvas />
       <main className="relative z-10">
         <HeroSection />
+        <LegacySection />
         <CompostSection />
         <MyceliumSection />
         <UndernetSection />

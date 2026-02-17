@@ -5,7 +5,7 @@ import { useSectionReveal } from "@/hooks/use-section-reveal"
 const CARDS = [
   {
     title: "Regenerative Economics",
-    body: "New currencies that decompose when hoarded. Mutual credit that flows like nutrients through soil. Quadratic funding that amplifies the grassroots. Economics that serves life instead of extracting from it.",
+    body: "The Commons Stack proved that augmented bonding curves and conviction voting could fund the commons without extraction. Now we go further: mutual credit that flows like nutrients through soil. Quadratic funding that amplifies the grassroots. Generative ownership that creates benefits for all stakeholders.",
   },
   {
     title: "Sovereign Technology",
@@ -13,7 +13,7 @@ const CARDS = [
   },
   {
     title: "Living Commons",
-    body: "Knowledge, tools, and infrastructure that belong to everyone. Not static archives but living, growing resources — tended by communities, enriched by participation, and freely shared across the mycelial web.",
+    body: "Michel Bauwens built the P2P Foundation Wiki — 25,000 pages of commons knowledge. That's the seed. Now we grow the forest: knowledge, tools, and infrastructure that belong to everyone. Not static archives but living, growing resources — tended by communities, freely shared across the mycelial web.",
   },
 ]
 
