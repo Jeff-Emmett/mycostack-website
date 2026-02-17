@@ -42,8 +42,8 @@ export function HeroSection() {
           className="emerge-letter text-sm sm:text-base opacity-40 max-w-xl mx-auto"
           style={{ animationDelay: "1.5s" }}
         >
-          Born from the P2P Foundation. Rooted in the legacy of Michel
-          Bauwens. Powered by mycelial principles.
+          Born from the P2P Foundation and the Commons Stack.
+          Powered by mycelial principles.
         </p>
 
         {/* Terminal tagline */}

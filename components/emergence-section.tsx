@@ -13,7 +13,7 @@ const CARDS = [
   },
   {
     title: "Living Commons",
-    body: "Michel Bauwens built the P2P Foundation Wiki — 25,000 pages of commons knowledge. That's the seed. Now we grow the forest: knowledge, tools, and infrastructure that belong to everyone. Not static archives but living, growing resources — tended by communities, freely shared across the mycelial web.",
+    body: "The P2P Foundation Wiki holds 25,000 pages of commons knowledge, built by hundreds of contributors over two decades. That's the seed. Now we grow the forest: knowledge, tools, and infrastructure that belong to everyone. Not static archives but living, growing resources — tended by communities, freely shared across the mycelial web.",
   },
 ]
 

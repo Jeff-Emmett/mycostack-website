@@ -20,7 +20,7 @@ const PRINCIPLES = [
   },
   {
     title: "Mutual Aid",
-    body: "Every node strengthens the network. Every network strengthens each node. Michel Bauwens called this commons-based peer production — contributory, needs-based collaboration as the third mode of production beyond state and market. In a mycelial system, there are no extractors — only participants in a web of reciprocal support.",
+    body: "Every node strengthens the network. Every network strengthens each node. The P2P Foundation called this commons-based peer production — contributory, needs-based collaboration as the third mode of production beyond state and market. In a mycelial system, there are no extractors — only participants in a web of reciprocal support.",
     icon: (
       <svg viewBox="0 0 48 48" className="w-12 h-12" fill="none" stroke="currentColor" strokeWidth="1.5">
         <circle cx="16" cy="16" r="6" />

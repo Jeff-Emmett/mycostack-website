@@ -17,22 +17,18 @@ export function LegacySection() {
           </h2>
           <p className="text-lg sm:text-xl opacity-70 max-w-2xl mx-auto">
             Every network grows from somewhere. Ours grows from the Commons
-            Stack and the life&rsquo;s work of Michel Bauwens.
+            Stack, the P2P Foundation, and the broader commons movement.
           </p>
         </div>
 
-        {/* Michel Bauwens tribute */}
+        {/* P2P Foundation */}
         <div className="section-reveal max-w-3xl mx-auto space-y-6">
           <h3 className="font-serif text-2xl sm:text-3xl font-semibold">
-            The Librarian of the Commons
+            The P2P Foundation
           </h3>
           <div className="space-y-4 text-base leading-relaxed opacity-80">
             <p>
-              For over two decades,{" "}
-              <strong className="opacity-100">Michel Bauwens</strong>{" "}
-              (1958&ndash;2024) dedicated himself to a monumental task:
-              documenting the emerging paradigm of peer-to-peer collaboration
-              and commons-based alternatives. The{" "}
+              The{" "}
               <a
                 href="https://wiki.p2pfoundation.net/"
                 target="_blank"
@@ -40,22 +36,22 @@ export function LegacySection() {
                 className="domain-link"
               >
                 P2P Foundation Wiki
-              </a>{" "}
-              he created contains over 25,000 pages of carefully curated
-              knowledge &mdash; case studies, theoretical frameworks, policy
-              proposals, and practical guides that have informed countless
-              projects worldwide.
+              </a>
+              , started by Michel Bauwens (1958&ndash;2024) and shaped by
+              hundreds of contributors, documents the emerging landscape of
+              peer-to-peer collaboration and commons-based alternatives. Over
+              25,000 pages of case studies, theoretical frameworks, policy
+              proposals, and practical guides &mdash; an open knowledge base
+              that continues to inform projects worldwide.
             </p>
             <p>
-              Michel wasn&rsquo;t just a theorist. He was a{" "}
-              <em>librarian</em> in the deepest sense &mdash; someone who
-              believed that knowledge, freely shared and carefully tended, could
-              transform society. His frameworks for{" "}
+              Out of this work came key frameworks:{" "}
               <strong>commons-based peer production</strong>, the{" "}
               <strong>partner state</strong>, and{" "}
               <strong>cosmo-localism</strong> (&ldquo;design global, manufacture
-              local&rdquo;) gave the commons movement its intellectual
-              foundations.
+              local&rdquo;). These ideas didn&rsquo;t belong to any one person
+              &mdash; they emerged from a network of researchers, practitioners,
+              and communities building alternatives in the open.
             </p>
           </div>
         </div>
@@ -63,7 +59,7 @@ export function LegacySection() {
         {/* Three modes */}
         <div className="section-reveal glass-card p-6 sm:p-8 max-w-3xl mx-auto">
           <h4 className="font-serif text-lg font-semibold mb-4 opacity-70">
-            Michel&rsquo;s Three Modes of Production
+            Three Modes of Production
           </h4>
           <div className="grid gap-4 sm:grid-cols-3 font-mono text-sm">
             <div className="space-y-1">
@@ -122,8 +118,7 @@ export function LegacySection() {
               token engineering, augmented bonding curves, and conviction
               voting, the Commons Stack and its{" "}
               <strong>Trusted Seed</strong> community developed regenerative
-              funding mechanisms for exactly the kind of commons infrastructure
-              Michel championed.
+              funding mechanisms for commons infrastructure.
             </p>
             <p>
               But tools alone aren&rsquo;t enough. The Commons Stack taught us
@@ -169,7 +164,7 @@ export function LegacySection() {
           {[
             {
               title: "Preserve",
-              text: "Archive and steward Michel's knowledge commons. The P2P Foundation Wiki, oral histories, theoretical frameworks \u2014 ensuring decades of accumulated wisdom remain living resources, not static monuments.",
+              text: "Steward the knowledge commons. The P2P Foundation Wiki, oral histories, theoretical frameworks \u2014 ensuring decades of accumulated wisdom remain living resources, not static monuments.",
             },
             {
               title: "Sustain",
@@ -204,7 +199,7 @@ export function LegacySection() {
             &ldquo;The more we share, the more we have.&rdquo;
           </p>
           <cite className="block mt-3 text-sm opacity-40 not-italic">
-            &mdash; Michel Bauwens
+            &mdash; a commons proverb
           </cite>
         </blockquote>
       </div>
