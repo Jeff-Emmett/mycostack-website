@@ -130,10 +130,45 @@ export function LegacySection() {
           </div>
         </div>
 
+        {/* Flow Funding */}
+        <div
+          className="section-reveal max-w-3xl mx-auto space-y-6"
+          style={{ transitionDelay: "0.18s" }}
+        >
+          <h3 className="font-serif text-2xl sm:text-3xl font-semibold">
+            Flow Funding
+          </h3>
+          <div className="space-y-4 text-base leading-relaxed opacity-80">
+            <p>
+              The Commons Stack pioneered the Augmented Bonding Curve &mdash; a
+              breakthrough in sustainable funding for the commons. Flow Funding
+              is its natural evolution: less mechanism, more ecology. Where the
+              ABC created a single reservoir, Flow Funding cultivates{" "}
+              <em>enmeshed ecologies</em> of inter- and intra-organizational
+              flow &mdash; resources circulating continuously between nested
+              communities the way nutrients cycle through a forest floor.
+            </p>
+            <p>
+              At the heart of Flow Funding is a threshold-based model rooted in
+              the concept of <strong>&ldquo;enoughness&rdquo;</strong> &mdash;
+              enabling an economics of sufficiency rather than accumulation. When
+              a node in the network has enough, surplus flows onward to where
+              it&rsquo;s needed. No hoarding, no artificial scarcity. Just the
+              continuous circulation that living systems have practiced for
+              billions of years.
+            </p>
+            <p>
+              This is economics as ecology: not designing incentives from above,
+              but cultivating the conditions for resources to find their own
+              path &mdash; rooted, reciprocal, and regenerative by nature.
+            </p>
+          </div>
+        </div>
+
         {/* P4P framework */}
         <div
           className="section-reveal max-w-3xl mx-auto space-y-6"
-          style={{ transitionDelay: "0.2s" }}
+          style={{ transitionDelay: "0.24s" }}
         >
           <h3 className="font-serif text-2xl sm:text-3xl font-semibold">
             Peer-for-Peer
