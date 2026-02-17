@@ -1,0 +1,32 @@
+services:
+  mycostack-website:
+    build: .
+    container_name: mycostack-website
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_BIND_SERVICE
+      - CHOWN
+      - SETGID
+      - SETUID
+      - DAC_OVERRIDE
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /var/cache/nginx
+      - /var/run
+    networks:
+      - traefik-public
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.mycostack.rule=Host(`mycostack.xyz`) || Host(`www.mycostack.xyz`)"
+      - "traefik.http.routers.mycostack.entrypoints=web"
+      - "traefik.http.services.mycostack.loadbalancer.server.port=80"
+      - "traefik.docker.network=traefik-public"
+
+networks:
+  traefik-public:
+    external: true

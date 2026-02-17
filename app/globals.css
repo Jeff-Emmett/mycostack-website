@@ -1,0 +1,249 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Scroll-driven dynamic colors (set by JS) */
+  --scroll-bg: oklch(0.08 0.02 30);
+  --scroll-fg: oklch(0.85 0.03 80);
+  --scroll-accent: oklch(0.45 0.12 60);
+  --scroll-depth: 0;
+
+  /* Static palette tokens */
+  --soil-black: oklch(0.08 0.02 30);
+  --earth-brown: oklch(0.12 0.04 40);
+  --compost-amber: oklch(0.55 0.15 45);
+  --forest-deep: oklch(0.16 0.05 150);
+  --mycelium-green: oklch(0.55 0.18 155);
+  --mycelium-glow: oklch(0.72 0.20 135);
+  --undernet-dark: oklch(0.22 0.04 200);
+  --undernet-teal: oklch(0.50 0.14 220);
+  --emergence-gold: oklch(0.60 0.16 90);
+  --canopy-light: oklch(0.94 0.02 110);
+  --mycopunk-orange: oklch(0.60 0.16 55);
+  --mycopunk-warm: oklch(0.50 0.13 40);
+
+  /* shadcn-compatible tokens */
+  --background: var(--scroll-bg);
+  --foreground: var(--scroll-fg);
+  --primary: var(--scroll-accent);
+  --primary-foreground: oklch(0.98 0.01 80);
+  --muted: oklch(0.20 0.02 30);
+  --muted-foreground: oklch(0.60 0.02 80);
+  --border: oklch(0.25 0.03 30);
+  --input: oklch(0.25 0.03 30);
+  --ring: var(--scroll-accent);
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-serif: var(--font-crimson-pro), Georgia, serif;
+  --font-mono: var(--font-geist-mono), monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-soil-black: var(--soil-black);
+  --color-earth-brown: var(--earth-brown);
+  --color-compost-amber: var(--compost-amber);
+  --color-forest-deep: var(--forest-deep);
+  --color-mycelium-green: var(--mycelium-green);
+  --color-mycelium-glow: var(--mycelium-glow);
+  --color-undernet-dark: var(--undernet-dark);
+  --color-undernet-teal: var(--undernet-teal);
+  --color-emergence-gold: var(--emergence-gold);
+  --color-canopy-light: var(--canopy-light);
+  --color-mycopunk-orange: var(--mycopunk-orange);
+  --color-mycopunk-warm: var(--mycopunk-warm);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    background-color: var(--scroll-bg, oklch(0.08 0.02 30));
+    color: var(--scroll-fg, oklch(0.85 0.03 80));
+    transition: background-color 0.05s linear, color 0.05s linear;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Section scroll-reveal */
+.section-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Noise texture overlay */
+.noise-overlay {
+  position: relative;
+}
+
+.noise-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+
+/* Hero title emergence animation */
+@keyframes emerge-letter {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.emerge-letter {
+  animation: emerge-letter 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+/* Scroll indicator pulse */
+@keyframes scroll-hint {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(10px);
+  }
+}
+
+.scroll-hint {
+  animation: scroll-hint 2.5s ease-in-out infinite;
+}
+
+/* Mycelial divider between sections */
+.mycelial-divider {
+  width: 2px;
+  height: 80px;
+  margin: 0 auto;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--scroll-accent),
+    transparent
+  );
+  opacity: 0.35;
+}
+
+/* Anastomosis SVG line drawing */
+.draw-line {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+}
+
+.draw-line.animate {
+  animation: draw-path 2.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes draw-path {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Merge pulse */
+@keyframes merge-pulse {
+  0%,
+  40% {
+    opacity: 0;
+    r: 0;
+  }
+  60% {
+    opacity: 1;
+    r: 10;
+  }
+  100% {
+    opacity: 0.7;
+    r: 7;
+  }
+}
+
+.merge-pulse {
+  animation: merge-pulse 3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 2s;
+}
+
+/* Network node hover glow */
+.network-node {
+  transition: all 0.3s ease;
+}
+
+.network-node:hover {
+  filter: drop-shadow(0 0 12px var(--scroll-accent));
+  transform: scale(1.05);
+}
+
+/* Terminal cursor blink */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Card glass effect */
+.glass-card {
+  background: oklch(0.5 0 0 / 0.08);
+  backdrop-filter: blur(8px);
+  border: 1px solid oklch(0.5 0 0 / 0.12);
+  border-radius: var(--radius-lg);
+}
+
+/* Link style for domain easter eggs */
+a.domain-link {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  transition: all 0.2s ease;
+}
+
+a.domain-link:hover {
+  text-decoration-style: solid;
+  color: var(--scroll-accent);
+}
