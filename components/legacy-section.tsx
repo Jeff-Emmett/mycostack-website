@@ -170,23 +170,71 @@ export function LegacySection() {
           className="section-reveal max-w-3xl mx-auto space-y-6"
           style={{ transitionDelay: "0.24s" }}
         >
-          <h3 className="font-serif text-2xl sm:text-3xl font-semibold">
-            Peer-for-Peer
+          <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-center">
+            The Birth of the
+            <br />
+            Peer-for-Peer (P4P) Movement
           </h3>
           <div className="space-y-4 text-base leading-relaxed opacity-80">
             <p>
-              MycoStack carries this legacy forward with a new framework:{" "}
-              <strong>Peer-for-Peer (P4P)</strong> &mdash; an evolution of P2P
-              thinking that emphasizes peers acting <em>for</em> peers, not
-              just exchanging with them. Mutual care and regeneration as core
-              protocols. Active stewardship rather than passive participation.
-              Solidarity economics in practice.
+              MycoStack carries this legacy forward by giving birth to a
+              movement: <strong>Peer-for-Peer (P4P)</strong> &mdash; an
+              evolution of P2P thinking that shifts from peers exchanging{" "}
+              <em>with</em> each other to peers acting <em>for</em> each other.
+              Mutual care and regeneration as core protocols. Active stewardship
+              rather than passive participation. Solidarity economics in
+              practice.
             </p>
             <p>
               Where the original Commons Stack built tools, MycoStack grows
               ecosystems. Where P2P described a relational dynamic, P4P demands
               a commitment. The mycelium doesn&rsquo;t just connect &mdash; it
               nourishes.
+            </p>
+          </div>
+
+          {/* P4P meanings */}
+          <div className="glass-card p-6 sm:p-8 space-y-4">
+            <h4 className="font-serif text-lg font-semibold opacity-70 text-center">
+              P4P is a fractal &mdash; the same ethic, many expressions
+            </h4>
+            <div className="grid gap-3 sm:grid-cols-2 font-mono text-sm">
+              <div className="space-y-1">
+                <div className="font-serif text-base font-semibold not-italic">
+                  Peer for Peer
+                </div>
+                <div className="opacity-60">
+                  Individuals acting in service of one another
+                </div>
+              </div>
+              <div className="space-y-1">
+                <div className="font-serif text-base font-semibold not-italic">
+                  People for Planet
+                </div>
+                <div className="opacity-60">
+                  Collective stewardship of our shared home
+                </div>
+              </div>
+              <div className="space-y-1">
+                <div className="font-serif text-base font-semibold not-italic">
+                  Protocols for Participation
+                </div>
+                <div className="opacity-60">
+                  Governance tools that encode mutual care
+                </div>
+              </div>
+              <div className="space-y-1">
+                <div className="font-serif text-base font-semibold not-italic">
+                  Platforms for the Public
+                </div>
+                <div className="opacity-60">
+                  Infrastructure owned by the communities it serves
+                </div>
+              </div>
+            </div>
+            <p className="text-sm opacity-50 text-center pt-2">
+              Every reading of P4P converges on the same principle: mutual
+              flourishing over extraction.
             </p>
           </div>
         </div>

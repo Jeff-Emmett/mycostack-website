@@ -43,7 +43,7 @@ export function HeroSection() {
           style={{ animationDelay: "1.5s" }}
         >
           Born from the P2P Foundation and the Commons Stack.
-          Powered by mycelial principles.
+          Birthing the Peer-for-Peer (P4P) movement.
         </p>
 
         {/* Terminal tagline */}
