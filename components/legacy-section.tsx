@@ -37,7 +37,7 @@ export function LegacySection() {
               >
                 P2P Foundation Wiki
               </a>
-              , started by Michel Bauwens (1958&ndash;2024) and shaped by
+              , started by Michel Bauwens and shaped by
               hundreds of contributors, documents the emerging landscape of
               peer-to-peer collaboration and commons-based alternatives. Over
               25,000 pages of case studies, theoretical frameworks, policy
