@@ -26,6 +26,12 @@ services:
       - "traefik.http.routers.mycostack.entrypoints=web"
       - "traefik.http.services.mycostack.loadbalancer.server.port=80"
       - "traefik.docker.network=traefik-public"
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://127.0.0.1:80/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
 
 networks:
   traefik-public:
