@@ -4,19 +4,19 @@ import { useScrollProgress } from "@/hooks/use-scroll-progress"
 import { useEffect } from "react"
 
 // Color stops: [scrollPos, bg-L, bg-C, bg-H, fg-L, fg-C, fg-H, accent-L, accent-C, accent-H]
-// 9 sections: Hero → Legacy → Compost → Mycelium → Undernet → Anastomosis → NoFi → Emergence → Network Map
-// Gentle rainbow hue rotation, staying dark through most of the journey,
-// only lightening gradually at emergence/network map
+// Consistent mossy/ferny palette throughout — no brightening shifts.
+// Background stays in the 0.20-0.24 range (dark forest floor).
+// Light text throughout. Hue drifts gently through greens and teals.
 const COLOR_STOPS: number[][] = [
-  [0.0,  0.18, 0.015, 10,   0.88, 0.02, 10,   0.50, 0.08, 10 ],  // Hero: warm twilight
-  [0.10, 0.16, 0.018, 40,   0.86, 0.02, 40,   0.52, 0.10, 40 ],  // Legacy: faded orange
-  [0.18, 0.15, 0.025, 70,   0.84, 0.03, 70,   0.55, 0.10, 65 ],  // Compost: faded amber
-  [0.30, 0.17, 0.03,  145,  0.88, 0.03, 145,  0.55, 0.12, 150],  // Mycelium: faded green
-  [0.42, 0.20, 0.025, 230,  0.88, 0.02, 230,  0.52, 0.10, 225],  // Undernet: faded blue
-  [0.52, 0.19, 0.025, 270,  0.87, 0.02, 270,  0.54, 0.10, 265],  // Anastomosis: faded indigo
-  [0.62, 0.18, 0.02,  310,  0.86, 0.02, 310,  0.52, 0.09, 305],  // NoFi: faded magenta
-  [0.75, 0.55, 0.025, 345,  0.92, 0.02, 345,  0.58, 0.10, 340],  // Emergence: faded rose, brightening
-  [0.90, 0.88, 0.015, 30,   0.12, 0.02, 30,   0.55, 0.08, 25 ],  // Network Map: warm light
+  [0.0,  0.20, 0.03, 140,  0.88, 0.03, 130,  0.58, 0.12, 145],  // Hero: mossy green
+  [0.10, 0.21, 0.035, 135,  0.87, 0.03, 135,  0.56, 0.13, 140],  // Legacy: deep fern
+  [0.18, 0.22, 0.04, 130,  0.86, 0.03, 125,  0.55, 0.14, 130],  // Compost: warm moss
+  [0.30, 0.22, 0.045, 150,  0.88, 0.03, 150,  0.58, 0.15, 155],  // Mycelium: forest green
+  [0.42, 0.21, 0.04, 170,  0.88, 0.03, 170,  0.55, 0.13, 175],  // Undernet: deep teal-green
+  [0.52, 0.22, 0.04, 160,  0.87, 0.03, 155,  0.57, 0.14, 160],  // Anastomosis: fern blend
+  [0.62, 0.21, 0.035, 145,  0.86, 0.03, 140,  0.55, 0.13, 148],  // NoFi: returning green
+  [0.75, 0.23, 0.04, 135,  0.88, 0.03, 130,  0.58, 0.14, 135],  // Emergence: bright moss
+  [0.90, 0.22, 0.035, 145,  0.87, 0.03, 140,  0.56, 0.13, 150],  // Network Map: canopy green
 ]
 
 function lerp(a: number, b: number, t: number) {

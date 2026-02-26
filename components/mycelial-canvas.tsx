@@ -163,7 +163,7 @@ export function MycelialCanvas() {
       ctx.clearRect(0, 0, width, height)
 
       // Fade the trail canvas slowly
-      trailCtx.fillStyle = "rgba(10, 8, 5, 0.006)"
+      trailCtx.fillStyle = "rgba(8, 18, 10, 0.006)"
       trailCtx.fillRect(0, 0, width, height)
 
       const accent = getAccentColor()
