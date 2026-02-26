@@ -223,13 +223,13 @@ export function LegacySection() {
           style={{ transitionDelay: "0.20s" }}
         >
           <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-center">
-            The Birth of the
+            The Inoculation of the
             <br />
             Peer-for-Peer (P4P) Movement
           </h3>
           <div className="space-y-4 text-base leading-relaxed opacity-80">
             <p>
-              MycoStack carries this legacy forward by giving birth to a
+              MycoStack carries this legacy forward by inoculating a
               movement: <strong>Peer-for-Peer (P4P)</strong> &mdash; an
               evolution of P2P thinking that shifts from peers exchanging{" "}
               <em>with</em> each other to peers acting <em>for</em> each other.

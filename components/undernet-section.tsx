@@ -41,7 +41,7 @@ export function UndernetSection() {
             <h3 className="font-serif text-2xl font-semibold">
               Community-Owned Infrastructure
             </h3>
-            <div className="space-y-4 text-base leading-relaxed opacity-75">
+            <div className="space-y-4 text-base leading-relaxed opacity-85">
               <p>
                 Beneath the extractive platforms, a different kind of
                 infrastructure is growing. Self-provisioned. Privacy-first.
@@ -77,7 +77,7 @@ export function UndernetSection() {
               </p>
             </div>
 
-            <div className="glass-card p-4 space-y-2 font-mono text-xs opacity-60">
+            <div className="glass-card p-4 space-y-2 font-mono text-xs opacity-80">
               <div>
                 <span className="opacity-50">protocol:</span> fog computing
               </div>
@@ -100,10 +100,10 @@ export function UndernetSection() {
             className="section-reveal glass-card p-6 overflow-x-auto"
             style={{ transitionDelay: "0.2s" }}
           >
-            <div className="font-mono text-xs sm:text-sm leading-relaxed opacity-60 whitespace-pre">
+            <div className="font-mono text-xs sm:text-sm leading-relaxed opacity-80 whitespace-pre">
               {ASCII_NETWORK}
             </div>
-            <p className="mt-4 font-mono text-xs opacity-40">
+            <p className="mt-4 font-mono text-xs opacity-60">
               // every node is sovereign
               <br />
               // every connection is encrypted

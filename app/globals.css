@@ -17,8 +17,8 @@
   --forest-deep: oklch(0.16 0.05 150);
   --mycelium-green: oklch(0.55 0.18 155);
   --mycelium-glow: oklch(0.72 0.20 135);
-  --undernet-dark: oklch(0.22 0.04 200);
-  --undernet-teal: oklch(0.50 0.14 220);
+  --undernet-dark: oklch(0.26 0.03 230);
+  --undernet-teal: oklch(0.55 0.10 225);
   --emergence-gold: oklch(0.60 0.16 90);
   --canopy-light: oklch(0.94 0.02 110);
   --mycopunk-orange: oklch(0.60 0.16 55);
@@ -229,9 +229,9 @@
 
 /* Card glass effect */
 .glass-card {
-  background: oklch(0.5 0 0 / 0.08);
+  background: oklch(0.5 0 0 / 0.12);
   backdrop-filter: blur(8px);
-  border: 1px solid oklch(0.5 0 0 / 0.12);
+  border: 1px solid oklch(0.5 0 0 / 0.16);
   border-radius: var(--radius-lg);
 }
 
