@@ -84,16 +84,19 @@ export function HeroSection() {
         </h1>
 
         {/* Subtitle */}
-        <p
-          className="emerge-letter text-xl sm:text-2xl md:text-3xl font-serif font-light tracking-wide opacity-80"
+        <div
+          className="emerge-letter space-y-3"
           style={{ animationDelay: "1.2s" }}
         >
-          Rebooting the legacy of the Commons Stack.
-          <br />
-          Preserving the legacy of the P2P Foundation.
-          <br />
-          The P4P (Peer-for-Peer) Movement, emerging from the soil.
-        </p>
+          <p className="text-base sm:text-lg md:text-xl font-serif font-light tracking-wide opacity-60">
+            Rebooting the legacy of the Commons Stack.
+            <br />
+            Preserving the legacy of the P2P Foundation.
+          </p>
+          <p className="text-xl sm:text-2xl md:text-3xl font-serif font-light tracking-wide opacity-80">
+            The P4P (Peer-for-Peer) Movement, emerging from the soil.
+          </p>
+        </div>
 
         {/* Cycling terminal tagline */}
         <div
