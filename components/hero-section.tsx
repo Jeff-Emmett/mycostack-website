@@ -3,6 +3,7 @@
 import { useSectionReveal } from "@/hooks/use-section-reveal"
 import { ChevronDown } from "lucide-react"
 import { useState, useEffect } from "react"
+import Image from "next/image"
 
 const TITLE = "MycoStack"
 
@@ -70,6 +71,18 @@ export function HeroSection() {
       className="relative min-h-[110vh] flex flex-col items-center justify-center px-6 noise-overlay"
     >
       <div className="section-reveal max-w-4xl mx-auto text-center space-y-8">
+        {/* Logo */}
+        <div className="emerge-letter flex justify-center" style={{ animationDelay: "0.1s" }}>
+          <Image
+            src="/mycostack-logo.png"
+            alt="MycoStack logo"
+            width={418}
+            height={649}
+            className="w-32 sm:w-40 md:w-48 lg:w-56 h-auto drop-shadow-[0_0_30px_rgba(45,140,100,0.3)]"
+            priority
+          />
+        </div>
+
         {/* Title with staggered emergence */}
         <h1 className="font-serif text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight">
           {TITLE.split("").map((letter, i) => (
