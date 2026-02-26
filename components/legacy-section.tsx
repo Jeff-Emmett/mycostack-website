@@ -16,42 +16,42 @@ export function LegacySection() {
             The Roots
           </h2>
           <p className="text-lg sm:text-xl opacity-70 max-w-2xl mx-auto">
-            Every network grows from somewhere. Ours grows from the Commons
-            Stack, the P2P Foundation, and the broader commons movement.
+            The MycoStack grows from the Commons Stack &mdash; its primary root
+            system &mdash; nourished by the knowledge commons of the P2P
+            Foundation and the broader commons movement.
           </p>
         </div>
 
-        {/* P2P Foundation */}
+        {/* Commons Stack - Primary Root */}
         <div className="section-reveal max-w-3xl mx-auto space-y-6">
           <h3 className="font-serif text-2xl sm:text-3xl font-semibold">
-            The P2P Foundation
+            The Commons Stack
           </h3>
           <div className="space-y-4 text-base leading-relaxed opacity-80">
             <p>
               The{" "}
               <a
-                href="https://wiki.p2pfoundation.net/"
+                href="https://commonsstack.org"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="domain-link"
               >
-                P2P Foundation Wiki
-              </a>
-              , started by Michel Bauwens and shaped by
-              hundreds of contributors, documents the emerging landscape of
-              peer-to-peer collaboration and commons-based alternatives. Over
-              25,000 pages of case studies, theoretical frameworks, policy
-              proposals, and practical guides &mdash; an open knowledge base
-              that continues to inform projects worldwide.
+                Commons Stack
+              </a>{" "}
+              is the primary root of the MycoStack. Its mission:{" "}
+              <em>fund and govern the commons</em>. Through pioneering work in
+              token engineering, augmented bonding curves, and conviction
+              voting, the Commons Stack and its{" "}
+              <strong>Trusted Seed</strong> community developed regenerative
+              funding mechanisms for commons infrastructure.
             </p>
             <p>
-              Out of this work came key frameworks:{" "}
-              <strong>commons-based peer production</strong>, the{" "}
-              <strong>partner state</strong>, and{" "}
-              <strong>cosmo-localism</strong> (&ldquo;design global, manufacture
-              local&rdquo;). These ideas didn&rsquo;t belong to any one person
-              &mdash; they emerged from a network of researchers, practitioners,
-              and communities building alternatives in the open.
+              But tools alone aren&rsquo;t enough. The Commons Stack taught us
+              that technology must be wrapped in culture &mdash; in shared
+              values, governance practices, and communities of care. The
+              Trusted Seed wasn&rsquo;t just a token-holder registry; it was an
+              experiment in building trust at the speed of consensus. From this
+              root system, the MycoStack grows outward.
             </p>
           </div>
         </div>
@@ -94,81 +94,133 @@ export function LegacySection() {
           </p>
         </div>
 
-        {/* Commons Stack history */}
+        {/* P2P Foundation - Foundation AND Forward */}
         <div
           className="section-reveal max-w-3xl mx-auto space-y-6"
-          style={{ transitionDelay: "0.15s" }}
+          style={{ transitionDelay: "0.12s" }}
         >
           <h3 className="font-serif text-2xl sm:text-3xl font-semibold">
-            The Commons Stack
+            The P2P Foundation
           </h3>
           <div className="space-y-4 text-base leading-relaxed opacity-80">
             <p>
               The{" "}
               <a
-                href="https://commonsstack.org"
+                href="https://wiki.p2pfoundation.net/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="domain-link"
               >
-                Commons Stack
-              </a>{" "}
-              was born from this intellectual tradition. Its mission:{" "}
-              <em>fund and govern the commons</em>. Through pioneering work in
-              token engineering, augmented bonding curves, and conviction
-              voting, the Commons Stack and its{" "}
-              <strong>Trusted Seed</strong> community developed regenerative
-              funding mechanisms for commons infrastructure.
+                P2P Foundation Wiki
+              </a>
+              , started by Michel Bauwens and shaped by
+              hundreds of contributors, is both the bedrock beneath the
+              MycoStack and the frontier ahead of it. Over 25,000 pages of
+              case studies, theoretical frameworks, policy proposals, and
+              practical guides &mdash; an open knowledge base that continues
+              to inform projects worldwide.
             </p>
             <p>
-              But tools alone aren&rsquo;t enough. The Commons Stack taught us
-              that technology must be wrapped in culture &mdash; in shared
-              values, governance practices, and communities of care. The
-              Trusted Seed wasn&rsquo;t just a token-holder registry; it was an
-              experiment in building trust at the speed of consensus.
+              Out of this work came key frameworks:{" "}
+              <strong>commons-based peer production</strong>, the{" "}
+              <strong>partner state</strong>, and{" "}
+              <strong>cosmo-localism</strong> (&ldquo;design global, manufacture
+              local&rdquo;). But the P2P Foundation doesn&rsquo;t just preserve
+              knowledge &mdash; it transforms it. Each iteration of commons
+              practice feeds back into the knowledge base, refining theories
+              into{" "}
+              <strong>convivial knowledge packets</strong>: living documents
+              that distill decades of research and practice into actionable
+              frameworks communities can actually use.
+            </p>
+            <p>
+              These knowledge packets become the seeds of{" "}
+              <strong>open source protocol toolkits</strong> &mdash; practical
+              governance, funding, and coordination tools that any community
+              can adopt, adapt, and contribute back to. The P2P Foundation as
+              both root system and fruiting body: absorbing nutrients from the
+              ground, pushing spores into the future.
             </p>
           </div>
         </div>
 
-        {/* Flow Funding */}
+        {/* Data Flows - New Section */}
         <div
           className="section-reveal max-w-3xl mx-auto space-y-6"
-          style={{ transitionDelay: "0.18s" }}
+          style={{ transitionDelay: "0.15s" }}
         >
           <h3 className="font-serif text-2xl sm:text-3xl font-semibold">
-            Flow Funding
+            Data Flows of the Commons
           </h3>
           <div className="space-y-4 text-base leading-relaxed opacity-80">
             <p>
-              The Commons Stack pioneered the Augmented Bonding Curve &mdash; a
-              breakthrough in sustainable funding for the commons. Flow Funding
-              is its natural evolution: less mechanism, more ecology. Where the
-              ABC created a single reservoir, Flow Funding cultivates{" "}
-              <em>enmeshed ecologies</em> of inter- and intra-organizational
-              flow &mdash; resources circulating continuously between nested
-              communities the way nutrients cycle through a forest floor.
+              The MycoStack recognizes that the dissemination of{" "}
+              <strong>trust</strong>, <strong>resources</strong>,{" "}
+              <strong>favors</strong>, and <strong>capital</strong> are all
+              data flows &mdash; streams that can be made visible, governed
+              collectively, and managed by communities on self-provisioned
+              infrastructure.
             </p>
             <p>
-              At the heart of Flow Funding is a threshold-based model rooted in
-              the concept of <strong>&ldquo;enoughness&rdquo;</strong> &mdash;
-              enabling an economics of sufficiency rather than accumulation. When
-              a node in the network has enough, surplus flows onward to where
-              it&rsquo;s needed. No hoarding, no artificial scarcity. Just the
-              continuous circulation that living systems have practiced for
-              billions of years.
+              When communities own their own coordination tools, these flows
+              stop being opaque transactions mediated by extractive platforms
+              and become transparent, reciprocal exchanges governed by the
+              people who participate in them. Trust becomes legible. Resources
+              find their way to where they&rsquo;re needed. Favors compound
+              into mutual aid networks. Capital circulates instead of
+              accumulating.
             </p>
-            <p>
-              This is economics as ecology: not designing incentives from above,
-              but cultivating the conditions for resources to find their own
-              path &mdash; rooted, reciprocal, and regenerative by nature.
+          </div>
+
+          <div className="glass-card p-6 sm:p-8 space-y-4">
+            <h4 className="font-serif text-lg font-semibold opacity-70">
+              Community-Owned Infrastructure for Coordination
+            </h4>
+            <div className="grid gap-4 sm:grid-cols-2 font-mono text-sm">
+              <div className="space-y-1">
+                <div className="font-serif text-base font-semibold not-italic">
+                  <a
+                    href="https://rstack.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="domain-link"
+                  >
+                    rStack
+                  </a>
+                </div>
+                <div className="opacity-60">
+                  Open source infrastructure stack for community coordination
+                  &mdash; self-hostable, sovereign, interoperable
+                </div>
+              </div>
+              <div className="space-y-1">
+                <div className="font-serif text-base font-semibold not-italic">
+                  <a
+                    href="https://yourspace.online"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="domain-link"
+                  >
+                    (You)rSpace
+                  </a>
+                </div>
+                <div className="opacity-60">
+                  Community-owned digital spaces &mdash; where coordination
+                  happens on infrastructure you control
+                </div>
+              </div>
+            </div>
+            <p className="text-sm opacity-50 pt-2">
+              When communities own their stack, every data flow becomes a
+              commons resource rather than a corporate asset.
             </p>
           </div>
         </div>
 
-        {/* P4P framework */}
+        {/* P4P Movement */}
         <div
           className="section-reveal max-w-3xl mx-auto space-y-6"
-          style={{ transitionDelay: "0.24s" }}
+          style={{ transitionDelay: "0.20s" }}
         >
           <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-center">
             The Birth of the
@@ -186,9 +238,12 @@ export function LegacySection() {
               practice.
             </p>
             <p>
-              Where the original Commons Stack built tools, MycoStack grows
-              ecosystems. Where P2P described a relational dynamic, P4P demands
-              a commitment. The mycelium doesn&rsquo;t just connect &mdash; it
+              The P2P Foundation&rsquo;s convivial knowledge packets become
+              the P4P movement&rsquo;s open source protocol toolkits &mdash;
+              governance patterns, funding mechanisms, and coordination
+              primitives packaged as commons resources that any community can
+              deploy. Where P2P described a relational dynamic, P4P demands a
+              commitment. The mycelium doesn&rsquo;t just connect &mdash; it
               nourishes.
             </p>
           </div>
@@ -239,6 +294,81 @@ export function LegacySection() {
           </div>
         </div>
 
+        {/* Tools in Active Research */}
+        <div
+          className="section-reveal max-w-3xl mx-auto space-y-6"
+          style={{ transitionDelay: "0.22s" }}
+        >
+          <h3 className="font-serif text-2xl sm:text-3xl font-semibold">
+            Tools in Active Research
+          </h3>
+          <div className="space-y-4 text-base leading-relaxed opacity-80">
+            <p>
+              <strong>Flow Funding</strong> &mdash; the natural evolution of
+              the Commons Stack&rsquo;s Augmented Bonding Curve. Less
+              mechanism, more ecology. Where the ABC created a single
+              reservoir, Flow Funding cultivates{" "}
+              <em>enmeshed ecologies</em> of inter- and intra-organizational
+              flow &mdash; resources circulating continuously between nested
+              communities the way nutrients cycle through a forest floor.
+            </p>
+            <p>
+              The latest research takes the form of{" "}
+              <strong>Threshold-Based Flow Funding (TBFF)</strong>, being
+              developed at{" "}
+              <a
+                href="https://rfunds.online"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="domain-link"
+              >
+                rFunds.online
+              </a>
+              . TBFF models funding pools as dynamic funnels operating across
+              three zones: an <strong>overflow zone</strong> where excess funds
+              automatically redistribute to connected pools, a{" "}
+              <strong>healthy zone</strong> of full flow and balanced
+              operations, and a <strong>critical zone</strong> where outflow
+              restricts to conservation mode. Funnels connect via overflow and
+              spending edges, creating living networks of resource circulation
+              governed by thresholds of{" "}
+              <strong>&ldquo;enoughness&rdquo;</strong> rather than
+              accumulation.
+            </p>
+            <p>
+              This is economics as ecology: not designing incentives from above,
+              but cultivating the conditions for resources to find their own
+              path &mdash; rooted, reciprocal, and regenerative by nature.
+            </p>
+          </div>
+
+          <div className="glass-card p-6 space-y-3 font-mono text-sm">
+            <div className="font-serif text-base font-semibold not-italic opacity-70">
+              TBFF Zones
+            </div>
+            <div className="grid gap-2 sm:grid-cols-3">
+              <div className="space-y-1">
+                <div className="opacity-50">overflow</div>
+                <div className="opacity-70 text-xs">
+                  Above MAX &mdash; surplus redistributes to connected funnels
+                </div>
+              </div>
+              <div className="space-y-1">
+                <div style={{ color: "var(--mycelium-green)" }}>healthy</div>
+                <div className="opacity-70 text-xs">
+                  Normal ops &mdash; full flow rate, balanced funding
+                </div>
+              </div>
+              <div className="space-y-1">
+                <div style={{ color: "var(--compost-amber)" }}>critical</div>
+                <div className="opacity-70 text-xs">
+                  Below MIN &mdash; outflow restricted, conservation mode
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Pillars */}
         <div
           className="section-reveal grid gap-6 sm:grid-cols-2 max-w-3xl mx-auto"
@@ -255,7 +385,7 @@ export function LegacySection() {
             },
             {
               title: "Evolve",
-              text: "Update the theoretical frameworks for current conditions. Bridge Web3 and traditional commons movements. Experiment with emerging technologies in service of collective flourishing.",
+              text: "Update the theoretical frameworks for current conditions. Distill research into convivial knowledge packets. Transform insights into open source protocol toolkits that communities can deploy.",
             },
             {
               title: "Propagate",

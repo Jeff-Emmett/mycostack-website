@@ -42,8 +42,8 @@ export function HeroSection() {
           className="emerge-letter text-sm sm:text-base opacity-40 max-w-xl mx-auto"
           style={{ animationDelay: "1.5s" }}
         >
-          Born from the P2P Foundation and the Commons Stack.
-          Inoculating the age of the P4P (peer-for-peer) movement.
+          Rooted in the Commons Stack. Nourished by the P2P Foundation.
+          Propagating the P4P (peer-for-peer) movement.
         </p>
 
         {/* Terminal tagline */}

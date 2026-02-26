@@ -5,15 +5,16 @@ import { useEffect } from "react"
 
 // Color stops: [scrollPos, bg-L, bg-C, bg-H, fg-L, fg-C, fg-H, accent-L, accent-C, accent-H]
 // 8 sections: Hero → Legacy → Compost → Mycelium → Undernet → Anastomosis → Emergence → Network Map
+// Gentler rainbow fade with lighter start, lower chroma for subtlety
 const COLOR_STOPS: number[][] = [
-  [0.0,  0.08, 0.02, 30,   0.85, 0.03, 80,   0.45, 0.12, 60 ],  // Hero: deep soil
-  [0.10, 0.10, 0.03, 35,   0.84, 0.03, 80,   0.50, 0.13, 50 ],  // Legacy: dark warm earth
-  [0.20, 0.12, 0.04, 40,   0.82, 0.04, 80,   0.55, 0.15, 45 ],  // Compost: earth brown
-  [0.35, 0.16, 0.05, 150,  0.88, 0.05, 145,  0.55, 0.18, 155],  // Mycelium: forest green
-  [0.48, 0.22, 0.04, 200,  0.90, 0.03, 200,  0.50, 0.14, 220],  // Undernet: deep blue
-  [0.60, 0.45, 0.06, 140,  0.15, 0.03, 150,  0.65, 0.18, 145],  // Anastomosis: transition
-  [0.78, 0.85, 0.04, 110,  0.15, 0.04, 100,  0.60, 0.16, 90 ],  // Emergence: golden light
-  [0.92, 0.94, 0.02, 110,  0.12, 0.03, 100,  0.55, 0.18, 155],  // Network Map: canopy
+  [0.0,  0.18, 0.015, 30,   0.88, 0.02, 80,   0.50, 0.10, 60 ],  // Hero: warm twilight (lighter)
+  [0.10, 0.16, 0.018, 40,   0.86, 0.02, 80,   0.52, 0.10, 50 ],  // Legacy: warm earth
+  [0.20, 0.15, 0.025, 50,   0.84, 0.03, 75,   0.55, 0.11, 45 ],  // Compost: amber earth
+  [0.35, 0.18, 0.03,  150,  0.88, 0.03, 145,  0.55, 0.13, 155],  // Mycelium: forest green
+  [0.48, 0.22, 0.025, 210,  0.90, 0.02, 200,  0.52, 0.10, 220],  // Undernet: deep teal
+  [0.60, 0.45, 0.03,  160,  0.15, 0.02, 150,  0.60, 0.12, 145],  // Anastomosis: transition
+  [0.78, 0.82, 0.025, 110,  0.15, 0.03, 100,  0.58, 0.12, 90 ],  // Emergence: golden light
+  [0.92, 0.92, 0.015, 120,  0.12, 0.02, 100,  0.55, 0.13, 155],  // Network Map: canopy
 ]
 
 function lerp(a: number, b: number, t: number) {
