@@ -9,7 +9,7 @@ const LINKS = [
   { name: "Mycopunk", url: "https://mycopunk.xyz" },
   { name: "rFunds", url: "https://rfunds.online" },
   { name: "rStack", url: "https://rstack.org" },
-  { name: "(You)rSpace", url: "https://yourspace.online" },
+  { name: "rSpace", url: "https://yourspace.online" },
   { name: "Undernet", url: "https://undernet.earth" },
   { name: "Psilo-Cyber", url: "https://psilo-cyber.net" },
   { name: "Compost Capitalism", url: "https://compostcapitalism.xyz" },

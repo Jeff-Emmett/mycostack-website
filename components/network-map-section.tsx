@@ -100,7 +100,7 @@ const NODES: NetworkNode[] = [
     y: 78,
   },
   {
-    name: "(You)rSpace",
+    name: "rSpace",
     domain: "yourspace.online",
     description: "Community-owned digital spaces",
     x: 65,

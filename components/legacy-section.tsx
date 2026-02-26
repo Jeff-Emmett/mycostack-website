@@ -240,7 +240,7 @@ export function LegacySection() {
                     rel="noopener noreferrer"
                     className="domain-link"
                   >
-                    (You)rSpace
+                    rSpace
                   </a>
                 </div>
                 <div className="opacity-60">

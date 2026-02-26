@@ -13,7 +13,7 @@ const QUIPS = [
   "stop making money, start making sense",
   "building from beneath the surface",
   "the (post-app)lication layer for regeneration",
-  "(you)r space, (you)r rules, (you)r data",
+  "your space, your rules, your data",
   "encrypted, entangled, evolving",
   "permaculture economies, pluralistic value",
   "peer for peer, people for planet",

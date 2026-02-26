@@ -228,7 +228,7 @@ export function AnastomosisSection() {
               rel="noopener noreferrer"
               className="domain-link"
             >
-              (you)rSpace.online
+              rSpace.online
             </a>{" "}
             and start anastomosing.
           </p>
