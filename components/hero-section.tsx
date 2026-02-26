@@ -34,7 +34,7 @@ export function HeroSection() {
         >
           Rebooting the Commons Stack.
           <br />
-          Growing from beneath.
+          Emerging from the soil.
         </p>
 
         {/* Lineage */}
