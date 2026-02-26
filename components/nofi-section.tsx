@@ -129,7 +129,7 @@ export function NoFiSection() {
           </div>
 
           <div className="glass-card p-3 space-y-1 font-mono text-xs text-center max-w-sm mx-auto">
-            <div className="opacity-50">TradFi &rarr; DeFi &rarr; ReFi &rarr; MycoFi &rarr;</div>
+            <div className="opacity-50">TradFi &rarr; DeFi &rarr; ReFi &rarr; CoFi &rarr; MycoFi &rarr;</div>
             <div style={{ color: "var(--scroll-accent)" }}>NoFi</div>
             <div className="opacity-50">Transcend the need for it.</div>
           </div>
