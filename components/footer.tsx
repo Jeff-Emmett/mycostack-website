@@ -5,11 +5,13 @@ const LINKS = [
   { name: "P2P Foundation", url: "https://wiki.p2pfoundation.net/" },
   { name: "MycoFi", url: "https://mycofi.earth" },
   { name: "Mycopunk", url: "https://mycopunk.xyz" },
+  { name: "rFunds", url: "https://rfunds.online" },
+  { name: "rStack", url: "https://rstack.org" },
+  { name: "(You)rSpace", url: "https://yourspace.online" },
   { name: "Undernet", url: "https://undernet.earth" },
   { name: "Psilo-Cyber", url: "https://psilo-cyber.net" },
   { name: "Compost Capitalism", url: "https://compostcapitalism.xyz" },
   { name: "Post-Appitalism", url: "https://post-appitalist.app" },
-  { name: "(You)rSpace", url: "https://yourspace.online" },
   { name: "Trippin Balls", url: "https://trippinballs.lol" },
 ]
 

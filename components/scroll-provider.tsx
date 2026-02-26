@@ -5,15 +5,16 @@ import { useEffect } from "react"
 
 // Color stops: [scrollPos, bg-L, bg-C, bg-H, fg-L, fg-C, fg-H, accent-L, accent-C, accent-H]
 // 8 sections: Hero → Legacy → Compost → Mycelium → Undernet → Anastomosis → Emergence → Network Map
+// Gentler rainbow fade with lighter start, lower chroma for subtlety
 const COLOR_STOPS: number[][] = [
-  [0.0,  0.08, 0.02, 10,   0.85, 0.02, 10,   0.45, 0.08, 10 ],  // Hero: warm red-brown
-  [0.10, 0.10, 0.03, 40,   0.84, 0.02, 40,   0.50, 0.10, 40 ],  // Legacy: faded orange
-  [0.20, 0.12, 0.03, 70,   0.82, 0.03, 70,   0.55, 0.10, 65 ],  // Compost: faded amber
-  [0.35, 0.16, 0.04, 145,  0.88, 0.03, 145,  0.55, 0.12, 150],  // Mycelium: faded green
-  [0.48, 0.26, 0.03, 230,  0.92, 0.02, 230,  0.55, 0.10, 225],  // Undernet: faded blue
-  [0.60, 0.45, 0.04, 290,  0.15, 0.02, 290,  0.55, 0.10, 285],  // Anastomosis: faded violet
-  [0.78, 0.85, 0.03, 345,  0.15, 0.02, 345,  0.60, 0.10, 340],  // Emergence: faded rose
-  [0.92, 0.94, 0.02, 30,   0.12, 0.02, 30,   0.55, 0.08, 25 ],  // Network Map: back to warm
+  [0.0,  0.18, 0.015, 10,   0.88, 0.02, 10,   0.50, 0.08, 10 ],  // Hero: warm twilight
+  [0.10, 0.16, 0.018, 40,   0.86, 0.02, 40,   0.52, 0.10, 40 ],  // Legacy: faded orange
+  [0.20, 0.15, 0.025, 70,   0.84, 0.03, 70,   0.55, 0.10, 65 ],  // Compost: faded amber
+  [0.35, 0.18, 0.03,  145,  0.88, 0.03, 145,  0.55, 0.12, 150],  // Mycelium: faded green
+  [0.48, 0.24, 0.025, 230,  0.90, 0.02, 230,  0.52, 0.10, 225],  // Undernet: faded blue
+  [0.60, 0.45, 0.03,  290,  0.15, 0.02, 290,  0.58, 0.10, 285],  // Anastomosis: faded violet
+  [0.78, 0.82, 0.025, 345,  0.15, 0.02, 345,  0.58, 0.10, 340],  // Emergence: faded rose
+  [0.92, 0.92, 0.015, 30,   0.12, 0.02, 30,   0.55, 0.08, 25 ],  // Network Map: back to warm
 ]
 
 function lerp(a: number, b: number, t: number) {
