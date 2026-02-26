@@ -51,6 +51,13 @@ const NODES: NetworkNode[] = [
     y: 18,
   },
   {
+    name: "Defect.fi",
+    domain: "defect.fi",
+    description: "Defecting from extractive finance",
+    x: 92,
+    y: 25,
+  },
+  {
     name: "Mycopunk",
     domain: "mycopunk.xyz",
     description: "Building from beneath the surface",
@@ -131,6 +138,8 @@ const CONNECTIONS: [string, string][] = [
   ["commonsstack.org", "nofi.lol"],
   ["rfunds.online", "mycofi.earth"],
   ["nofi.lol", "mycofi.earth"],
+  ["nofi.lol", "defect.fi"],
+  ["defect.fi", "mycofi.earth"],
   ["rstack.org", "yourspace.online"],
   ["rstack.org", "undernet.earth"],
   ["wiki.p2pfoundation.net", "post-appitalist.app"],
@@ -178,7 +187,7 @@ export function NetworkMapSection() {
           <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold">
             The Network of Networks
           </h2>
-          <p className="text-lg sm:text-xl opacity-70 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl opacity-85 max-w-2xl mx-auto">
             Every node strengthens the whole. Every connection multiplies
             possibility.
           </p>

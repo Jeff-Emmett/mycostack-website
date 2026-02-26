@@ -88,7 +88,7 @@ export function HeroSection() {
           className="emerge-letter space-y-3"
           style={{ animationDelay: "1.2s" }}
         >
-          <p className="text-base sm:text-lg md:text-xl font-serif font-light tracking-wide opacity-60">
+          <p className="text-base sm:text-lg md:text-xl font-serif font-light tracking-wide opacity-75">
             Rebooting the legacy of the Commons Stack.
             <br />
             Preserving the legacy of the P2P Foundation.
@@ -100,7 +100,7 @@ export function HeroSection() {
 
         {/* Cycling terminal tagline */}
         <div
-          className="emerge-letter font-mono text-sm sm:text-base opacity-60 h-6"
+          className="emerge-letter font-mono text-sm sm:text-base opacity-70 h-6"
           style={{ animationDelay: "2s" }}
         >
           <span className="opacity-50">&gt;</span>{" "}

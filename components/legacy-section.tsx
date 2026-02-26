@@ -15,7 +15,7 @@ export function LegacySection() {
           <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold">
             The Roots
           </h2>
-          <p className="text-lg sm:text-xl opacity-70 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl opacity-85 max-w-2xl mx-auto">
             The MycoStack grows from the Commons Stack &mdash; its primary root
             system &mdash; nourished by the knowledge commons of the P2P
             Foundation and the broader commons movement.
@@ -27,7 +27,7 @@ export function LegacySection() {
           <h3 className="font-serif text-2xl sm:text-3xl font-semibold">
             The Commons Stack
           </h3>
-          <div className="space-y-4 text-base leading-relaxed opacity-80">
+          <div className="space-y-4 text-base leading-relaxed opacity-90">
             <p>
               The{" "}
               <a
@@ -102,7 +102,7 @@ export function LegacySection() {
           <h3 className="font-serif text-2xl sm:text-3xl font-semibold">
             The P2P Foundation
           </h3>
-          <div className="space-y-4 text-base leading-relaxed opacity-80">
+          <div className="space-y-4 text-base leading-relaxed opacity-90">
             <p>
               The{" "}
               <a
@@ -124,14 +124,15 @@ export function LegacySection() {
               Out of this work came key frameworks:{" "}
               <strong>commons-based peer production</strong>, the{" "}
               <strong>partner state</strong>, and{" "}
-              <strong>cosmo-localism</strong> (&ldquo;design global, manufacture
-              local&rdquo;). But the P2P Foundation doesn&rsquo;t just preserve
-              knowledge &mdash; it transforms it. Each iteration of commons
-              practice feeds back into the knowledge base, refining theories
-              into{" "}
-              <strong>convivial knowledge packets</strong>: living documents
-              that distill decades of research and practice into actionable
-              frameworks communities can actually use.
+              <strong>cosmo-localism</strong>. But the P2P Foundation
+              doesn&rsquo;t just preserve knowledge &mdash; it transforms it.
+              Each iteration of commons practice feeds back into the knowledge
+              base, refining theories into{" "}
+              <strong>convivial knowledge packets</strong> and{" "}
+              <strong>convivial tools</strong> &mdash; technology in the
+              tradition of Ivan Illich, designed to expand human capability
+              without creating dependency. Tools that communities master,
+              rather than tools that master communities.
             </p>
             <p>
               These knowledge packets become the seeds of{" "}
@@ -141,6 +142,44 @@ export function LegacySection() {
               both root system and fruiting body: absorbing nutrients from the
               ground, pushing spores into the future.
             </p>
+          </div>
+
+          {/* Cosmo-localism */}
+          <div className="glass-card p-6 sm:p-8 space-y-4">
+            <h4 className="font-serif text-lg font-semibold opacity-70">
+              Cosmo-localism
+            </h4>
+            <p className="text-sm leading-relaxed opacity-80">
+              <strong>&ldquo;Design global, manufacture local.&rdquo;</strong>{" "}
+              Knowledge is a non-rival good &mdash; sharing it doesn&rsquo;t
+              diminish it. Hardware is local and contextual. Cosmo-localism
+              means open source designs flow freely across the global commons,
+              while production happens close to where things are needed, using
+              local materials, local labor, local governance. The global brain
+              thinks together; the local hands build together.
+            </p>
+            <div className="grid gap-3 sm:grid-cols-3 font-mono text-xs mt-3">
+              <div className="space-y-1">
+                <div style={{ color: "var(--scroll-accent)" }}>global</div>
+                <div className="opacity-60">
+                  Open designs, shared protocols, knowledge commons
+                </div>
+              </div>
+              <div className="space-y-1">
+                <div style={{ color: "var(--scroll-accent)" }}>local</div>
+                <div className="opacity-60">
+                  Community production, contextual adaptation, bioregional
+                  materials
+                </div>
+              </div>
+              <div className="space-y-1">
+                <div style={{ color: "var(--scroll-accent)" }}>convivial</div>
+                <div className="opacity-60">
+                  Tools that empower users, not platforms that extract from
+                  them
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -152,7 +191,7 @@ export function LegacySection() {
           <h3 className="font-serif text-2xl sm:text-3xl font-semibold">
             Data Flows of the Commons
           </h3>
-          <div className="space-y-4 text-base leading-relaxed opacity-80">
+          <div className="space-y-4 text-base leading-relaxed opacity-90">
             <p>
               The MycoStack recognizes that the dissemination of{" "}
               <strong>trust</strong>, <strong>resources</strong>,{" "}
@@ -227,7 +266,7 @@ export function LegacySection() {
             <br />
             Peer-for-Peer (P4P) Movement
           </h3>
-          <div className="space-y-4 text-base leading-relaxed opacity-80">
+          <div className="space-y-4 text-base leading-relaxed opacity-90">
             <p>
               MycoStack carries this legacy forward by inoculating a
               movement: <strong>Peer-for-Peer (P4P)</strong> &mdash; an
@@ -302,7 +341,7 @@ export function LegacySection() {
           <h3 className="font-serif text-2xl sm:text-3xl font-semibold">
             Tools in Active Research
           </h3>
-          <div className="space-y-4 text-base leading-relaxed opacity-80">
+          <div className="space-y-4 text-base leading-relaxed opacity-90">
             <p>
               <strong>Flow Funding</strong> &mdash; the natural evolution of
               the Commons Stack&rsquo;s Augmented Bonding Curve. Less
@@ -399,7 +438,7 @@ export function LegacySection() {
               <h4 className="font-serif text-lg font-semibold">
                 {pillar.title}
               </h4>
-              <p className="text-sm leading-relaxed opacity-70">
+              <p className="text-sm leading-relaxed opacity-80">
                 {pillar.text}
               </p>
             </div>
@@ -408,7 +447,7 @@ export function LegacySection() {
 
         {/* Quote */}
         <blockquote className="section-reveal max-w-2xl mx-auto text-center">
-          <p className="font-serif text-xl sm:text-2xl italic leading-relaxed opacity-70">
+          <p className="font-serif text-xl sm:text-2xl italic leading-relaxed opacity-80">
             &ldquo;The more we share, the more we have.&rdquo;
           </p>
           <cite className="block mt-3 text-sm opacity-40 not-italic">

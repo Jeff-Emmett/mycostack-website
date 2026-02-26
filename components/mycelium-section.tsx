@@ -59,7 +59,7 @@ export function MyceliumSection() {
           <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold">
             The Mycelial Network
           </h2>
-          <p className="text-lg sm:text-xl opacity-70 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl opacity-85 max-w-2xl mx-auto">
             Three principles from the forest floor, applied to human systems
           </p>
         </div>
@@ -77,7 +77,7 @@ export function MyceliumSection() {
               <h3 className="font-serif text-2xl sm:text-3xl font-semibold">
                 {principle.title}
               </h3>
-              <p className="text-base leading-relaxed opacity-75">
+              <p className="text-base leading-relaxed opacity-85">
                 {principle.body}
               </p>
             </div>
@@ -89,7 +89,7 @@ export function MyceliumSection() {
 
         {/* Connecting line between principles - visual only */}
         <div className="section-reveal text-center space-y-3 pt-4">
-          <p className="text-sm opacity-50 max-w-lg mx-auto">
+          <p className="text-sm opacity-65 max-w-lg mx-auto">
             These are the protocols of{" "}
             <a
               href="https://mycofi.earth"

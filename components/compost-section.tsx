@@ -29,7 +29,7 @@ export function CompostSection() {
           <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold">
             The Compost Layer
           </h2>
-          <p className="text-lg sm:text-xl opacity-70 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl opacity-85 max-w-2xl mx-auto">
             Decomposing extractive systems into nutrients for regeneration
           </p>
         </div>
@@ -48,12 +48,12 @@ export function CompostSection() {
               <h3 className="font-serif text-xl font-semibold">
                 {card.title}
               </h3>
-              <p className="text-sm leading-relaxed opacity-75">{card.body}</p>
+              <p className="text-sm leading-relaxed opacity-85">{card.body}</p>
             </div>
           ))}
         </div>
 
-        <p className="section-reveal text-center text-base opacity-60 max-w-xl mx-auto">
+        <p className="section-reveal text-center text-base opacity-75 max-w-xl mx-auto">
           This is{" "}
           <a
             href="https://compostcapitalism.xyz"

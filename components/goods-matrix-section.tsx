@@ -57,7 +57,7 @@ export function GoodsMatrixSection() {
           <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold">
             Beyond Ostrom&rsquo;s Matrix
           </h2>
-          <p className="text-lg sm:text-xl opacity-70 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl opacity-85 max-w-2xl mx-auto">
             Elinor Ostrom mapped the commons as a 2&times;2 grid. But the
             network age reveals a third column &mdash; goods that grow{" "}
             <em>more</em> valuable the more people use them.
@@ -189,7 +189,7 @@ export function GoodsMatrixSection() {
           className="section-reveal max-w-3xl mx-auto space-y-6"
           style={{ transitionDelay: "0.2s" }}
         >
-          <div className="space-y-4 text-base leading-relaxed opacity-80">
+          <div className="space-y-4 text-base leading-relaxed opacity-90">
             <p>
               Traditional economics fixates on the left two columns: private
               goods to buy, public goods to fund, common-pool resources to
@@ -229,7 +229,7 @@ export function GoodsMatrixSection() {
           className="section-reveal max-w-2xl mx-auto text-center"
           style={{ transitionDelay: "0.25s" }}
         >
-          <p className="font-serif text-xl sm:text-2xl italic leading-relaxed opacity-70">
+          <p className="font-serif text-xl sm:text-2xl italic leading-relaxed opacity-80">
             &ldquo;The forest floor is a symbiotic good. Every organism that
             joins makes the soil richer for all.&rdquo;
           </p>

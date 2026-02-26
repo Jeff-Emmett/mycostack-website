@@ -29,7 +29,7 @@ export function EmergenceSection() {
           <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold">
             Emergence
           </h2>
-          <p className="text-lg sm:text-xl opacity-70 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl opacity-85 max-w-2xl mx-auto">
             What grows underground eventually breaks the surface.
           </p>
         </div>
@@ -57,13 +57,13 @@ export function EmergenceSection() {
               <h3 className="font-serif text-xl font-semibold">
                 {card.title}
               </h3>
-              <p className="text-sm leading-relaxed opacity-75">{card.body}</p>
+              <p className="text-sm leading-relaxed opacity-85">{card.body}</p>
             </div>
           ))}
         </div>
 
         <div className="section-reveal text-center space-y-4 max-w-xl mx-auto">
-          <p className="text-base opacity-60">
+          <p className="text-base opacity-75">
             Building the{" "}
             <a
               href="https://post-appitalist.app"
@@ -76,7 +76,7 @@ export function EmergenceSection() {
             lication layer for a regenerative economy. Tools that serve
             communities, not shareholders.
           </p>
-          <p className="text-sm opacity-40">
+          <p className="text-sm opacity-55">
             Sometimes the best way to see the future is to change your
             perspective. Stop{" "}
             <a

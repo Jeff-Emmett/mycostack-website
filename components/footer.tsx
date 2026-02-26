@@ -5,6 +5,7 @@ const LINKS = [
   { name: "P2P Foundation", url: "https://wiki.p2pfoundation.net/" },
   { name: "MycoFi", url: "https://mycofi.earth" },
   { name: "NoFi", url: "https://nofi.lol" },
+  { name: "Defect.fi", url: "https://defect.fi" },
   { name: "Mycopunk", url: "https://mycopunk.xyz" },
   { name: "rFunds", url: "https://rfunds.online" },
   { name: "rStack", url: "https://rstack.org" },
@@ -37,10 +38,10 @@ export function Footer() {
 
         {/* Tagline */}
         <div className="text-center space-y-3">
-          <p className="font-serif text-lg opacity-50">
+          <p className="font-serif text-lg opacity-65">
             Built with compost and code.
           </p>
-          <p className="font-mono text-xs opacity-30">
+          <p className="font-mono text-xs opacity-45">
             MycoStack &mdash; technology-augmented commons growing from beneath
           </p>
           <p className="font-mono text-xs opacity-20">
