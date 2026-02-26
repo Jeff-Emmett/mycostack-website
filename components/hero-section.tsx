@@ -2,11 +2,67 @@
 
 import { useSectionReveal } from "@/hooks/use-section-reveal"
 import { ChevronDown } from "lucide-react"
+import { useState, useEffect } from "react"
 
 const TITLE = "MycoStack"
 
+const QUIPS = [
+  "(com)post-capitalism, growing alternatives",
+  "routing nutrients, not profits",
+  "the network beneath the network",
+  "stop making money, start making sense",
+  "building from beneath the surface",
+  "the (post-app)lication layer for regeneration",
+  "(you)r space, (you)r rules, (you)r data",
+  "encrypted, entangled, evolving",
+  "permaculture economies, pluralistic value",
+  "peer for peer, people for planet",
+  "voice for all, extraction for none",
+  "design global, manufacture local",
+  "funding flows where needed, not where hoarded",
+  "the more we share, the more we have",
+  "sovereign tech for sovereign communities",
+  "composting the old, inoculating the new",
+]
+
 export function HeroSection() {
   const sectionRef = useSectionReveal()
+  const [quipIndex, setQuipIndex] = useState(0)
+  const [displayed, setDisplayed] = useState("")
+  const [phase, setPhase] = useState<"typing" | "holding" | "erasing">("typing")
+
+  useEffect(() => {
+    const quip = QUIPS[quipIndex]
+
+    if (phase === "typing") {
+      if (displayed.length < quip.length) {
+        const timeout = setTimeout(() => {
+          setDisplayed(quip.slice(0, displayed.length + 1))
+        }, 35 + Math.random() * 25)
+        return () => clearTimeout(timeout)
+      } else {
+        const timeout = setTimeout(() => setPhase("holding"), 100)
+        return () => clearTimeout(timeout)
+      }
+    }
+
+    if (phase === "holding") {
+      const timeout = setTimeout(() => setPhase("erasing"), 3000)
+      return () => clearTimeout(timeout)
+    }
+
+    if (phase === "erasing") {
+      if (displayed.length > 0) {
+        const timeout = setTimeout(() => {
+          setDisplayed(displayed.slice(0, -1))
+        }, 18)
+        return () => clearTimeout(timeout)
+      } else {
+        setQuipIndex((prev) => (prev + 1) % QUIPS.length)
+        setPhase("typing")
+      }
+    }
+  }, [displayed, phase, quipIndex])
 
   return (
     <section
@@ -46,13 +102,13 @@ export function HeroSection() {
           Propagating the P4P (peer-for-peer) movement.
         </p>
 
-        {/* Terminal tagline */}
+        {/* Cycling terminal tagline */}
         <div
-          className="emerge-letter font-mono text-sm sm:text-base opacity-60"
+          className="emerge-letter font-mono text-sm sm:text-base opacity-60 h-6"
           style={{ animationDelay: "2s" }}
         >
-          <span className="opacity-50">&gt;</span> composting capitalism,
-          growing alternatives
+          <span className="opacity-50">&gt;</span>{" "}
+          {displayed}
           <span className="cursor-blink ml-0.5">_</span>
         </div>
       </div>
