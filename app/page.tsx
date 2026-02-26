@@ -5,6 +5,7 @@ import { CompostSection } from "@/components/compost-section"
 import { MyceliumSection } from "@/components/mycelium-section"
 import { UndernetSection } from "@/components/undernet-section"
 import { AnastomosisSection } from "@/components/anastomosis-section"
+import { NoFiSection } from "@/components/nofi-section"
 import { EmergenceSection } from "@/components/emergence-section"
 import { NetworkMapSection } from "@/components/network-map-section"
 import { Footer } from "@/components/footer"
@@ -20,6 +21,7 @@ export default function Home() {
         <MyceliumSection />
         <UndernetSection />
         <AnastomosisSection />
+        <NoFiSection />
         <EmergenceSection />
         <NetworkMapSection />
       </main>

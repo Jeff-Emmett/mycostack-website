@@ -27,86 +27,127 @@ const NODES: NetworkNode[] = [
     domain: "commonsstack.org",
     description: "Fund and govern the commons — primary root",
     x: 50,
-    y: 10,
+    y: 8,
   },
   {
     name: "P2P Foundation",
     domain: "wiki.p2pfoundation.net",
     description: "25,000 pages of commons knowledge",
     x: 50,
-    y: 92,
+    y: 95,
   },
   {
     name: "MycoFi",
     domain: "mycofi.earth",
     description: "Mycoeconomics & regenerative currencies",
-    x: 22,
-    y: 20,
+    x: 20,
+    y: 18,
+  },
+  {
+    name: "NoFi",
+    domain: "nofi.lol",
+    description: "Post-finance — making change, not money",
+    x: 80,
+    y: 18,
   },
   {
     name: "Mycopunk",
     domain: "mycopunk.xyz",
     description: "Building from beneath the surface",
-    x: 78,
-    y: 15,
+    x: 8,
+    y: 32,
   },
   {
     name: "rFunds",
     domain: "rfunds.online",
     description: "Threshold-Based Flow Funding research",
-    x: 32,
-    y: 30,
+    x: 30,
+    y: 28,
   },
   {
     name: "rStack",
     domain: "rstack.org",
     description: "Open source community coordination infrastructure",
-    x: 75,
-    y: 58,
+    x: 78,
+    y: 55,
   },
   {
     name: "Compost Capitalism",
     domain: "compostcapitalism.xyz",
     description: "Decomposing extractive systems",
     x: 10,
-    y: 50,
+    y: 55,
   },
   {
     name: "The Undernet",
     domain: "undernet.earth",
     description: "Community-owned infrastructure",
-    x: 90,
-    y: 40,
+    x: 92,
+    y: 38,
   },
   {
     name: "Post-Appitalism",
     domain: "post-appitalist.app",
     description: "Tools beyond extractive platforms",
-    x: 18,
+    x: 15,
     y: 78,
   },
   {
     name: "(You)rSpace",
     domain: "yourspace.online",
     description: "Community-owned digital spaces",
-    x: 62,
+    x: 65,
     y: 78,
   },
   {
     name: "Psilo-Cyber",
     domain: "psilo-cyber.net",
     description: "Encrypted mesh networks",
-    x: 85,
-    y: 72,
+    x: 88,
+    y: 70,
   },
   {
     name: "Trippin Balls",
     domain: "trippinballs.lol",
     description: "Expand your perspective",
-    x: 40,
-    y: 90,
+    x: 38,
+    y: 92,
   },
 ]
+
+// Building alongside — allied organizations
+const ALLIES: NetworkNode[] = [
+  {
+    name: "Giveth",
+    domain: "giveth.io",
+    description: "Public goods funding for the commons",
+    x: 30,
+    y: 62,
+  },
+  {
+    name: "Token Engineering",
+    domain: "tecommons.org",
+    description: "Token engineering for the commons",
+    x: 70,
+    y: 35,
+  },
+  {
+    name: "Enspiral",
+    domain: "enspiral.com",
+    description: "Collaborative livelihood network",
+    x: 35,
+    y: 78,
+  },
+  {
+    name: "Grassroots Economics",
+    domain: "grassrootseconomics.org",
+    description: "Community currencies in practice",
+    x: 85,
+    y: 85,
+  },
+]
+
+const ALL_NODES = [...NODES, ...ALLIES]
 
 const CONNECTIONS: [string, string][] = [
   ["mycostack.xyz", "commonsstack.org"],
@@ -116,25 +157,36 @@ const CONNECTIONS: [string, string][] = [
   ["mycostack.xyz", "compostcapitalism.xyz"],
   ["mycostack.xyz", "yourspace.online"],
   ["mycostack.xyz", "rstack.org"],
+  ["mycostack.xyz", "nofi.lol"],
   ["commonsstack.org", "wiki.p2pfoundation.net"],
   ["commonsstack.org", "mycofi.earth"],
   ["commonsstack.org", "mycopunk.xyz"],
   ["commonsstack.org", "rfunds.online"],
+  ["commonsstack.org", "nofi.lol"],
+  ["commonsstack.org", "tecommons.org"],
+  ["commonsstack.org", "giveth.io"],
   ["rfunds.online", "mycofi.earth"],
+  ["nofi.lol", "mycofi.earth"],
   ["rstack.org", "yourspace.online"],
   ["rstack.org", "undernet.earth"],
   ["wiki.p2pfoundation.net", "post-appitalist.app"],
+  ["wiki.p2pfoundation.net", "enspiral.com"],
   ["mycofi.earth", "mycopunk.xyz"],
+  ["mycofi.earth", "grassrootseconomics.org"],
   ["undernet.earth", "psilo-cyber.net"],
   ["compostcapitalism.xyz", "post-appitalist.app"],
   ["post-appitalist.app", "yourspace.online"],
   ["yourspace.online", "trippinballs.lol"],
   ["mycopunk.xyz", "psilo-cyber.net"],
   ["mycopunk.xyz", "undernet.earth"],
+  ["giveth.io", "rfunds.online"],
+  ["tecommons.org", "mycofi.earth"],
+  ["enspiral.com", "giveth.io"],
+  ["grassrootseconomics.org", "yourspace.online"],
 ]
 
 function getNode(domain: string) {
-  return NODES.find((n) => n.domain === domain)
+  return ALL_NODES.find((n) => n.domain === domain)
 }
 
 export function NetworkMapSection() {
@@ -170,7 +222,7 @@ export function NetworkMapSection() {
           </h2>
           <p className="text-lg sm:text-xl opacity-70 max-w-2xl mx-auto">
             Every node strengthens the whole. Every connection multiplies
-            possibility.
+            possibility. Building alongside allies who share the vision.
           </p>
         </div>
 
@@ -204,7 +256,7 @@ export function NetworkMapSection() {
             </svg>
 
             {/* Node cards */}
-            {NODES.map((node) => {
+            {ALL_NODES.map((node) => {
               const isActive = hovered === node.domain
               const connected = isConnected(node.domain)
               const dimmed = hovered && !isActive && !connected
@@ -251,7 +303,7 @@ export function NetworkMapSection() {
 
         {/* Mobile: Simple card list */}
         <div className="section-reveal md:hidden grid gap-3 grid-cols-1 sm:grid-cols-2">
-          {NODES.map((node, i) => (
+          {ALL_NODES.map((node, i) => (
             <a
               key={node.domain}
               href={`https://${node.domain}`}

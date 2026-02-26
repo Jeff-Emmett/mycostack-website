@@ -4,6 +4,7 @@ const LINKS = [
   { name: "Commons Stack", url: "https://commonsstack.org" },
   { name: "P2P Foundation", url: "https://wiki.p2pfoundation.net/" },
   { name: "MycoFi", url: "https://mycofi.earth" },
+  { name: "NoFi", url: "https://nofi.lol" },
   { name: "Mycopunk", url: "https://mycopunk.xyz" },
   { name: "rFunds", url: "https://rfunds.online" },
   { name: "rStack", url: "https://rstack.org" },
@@ -13,6 +14,13 @@ const LINKS = [
   { name: "Compost Capitalism", url: "https://compostcapitalism.xyz" },
   { name: "Post-Appitalism", url: "https://post-appitalist.app" },
   { name: "Trippin Balls", url: "https://trippinballs.lol" },
+]
+
+const ALLIES = [
+  { name: "Giveth", url: "https://giveth.io" },
+  { name: "Token Engineering Commons", url: "https://tecommons.org" },
+  { name: "Enspiral", url: "https://enspiral.com" },
+  { name: "Grassroots Economics", url: "https://grassrootseconomics.org" },
 ]
 
 export function Footer() {
@@ -32,6 +40,24 @@ export function Footer() {
               {link.name}
             </a>
           ))}
+        </div>
+
+        {/* Allies */}
+        <div className="text-center space-y-2">
+          <p className="font-mono text-xs opacity-25">building alongside</p>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+            {ALLIES.map((link) => (
+              <a
+                key={link.url}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-xs opacity-30 hover:opacity-60 transition-opacity"
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
         </div>
 
         {/* Tagline */}
