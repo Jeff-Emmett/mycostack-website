@@ -115,40 +115,6 @@ const NODES: NetworkNode[] = [
   },
 ]
 
-// Building alongside — allied organizations
-const ALLIES: NetworkNode[] = [
-  {
-    name: "Giveth",
-    domain: "giveth.io",
-    description: "Public goods funding for the commons",
-    x: 30,
-    y: 62,
-  },
-  {
-    name: "Token Engineering",
-    domain: "tecommons.org",
-    description: "Token engineering for the commons",
-    x: 70,
-    y: 35,
-  },
-  {
-    name: "Enspiral",
-    domain: "enspiral.com",
-    description: "Collaborative livelihood network",
-    x: 35,
-    y: 78,
-  },
-  {
-    name: "Grassroots Economics",
-    domain: "grassrootseconomics.org",
-    description: "Community currencies in practice",
-    x: 85,
-    y: 85,
-  },
-]
-
-const ALL_NODES = [...NODES, ...ALLIES]
-
 const CONNECTIONS: [string, string][] = [
   ["mycostack.xyz", "commonsstack.org"],
   ["mycostack.xyz", "wiki.p2pfoundation.net"],
@@ -163,30 +129,22 @@ const CONNECTIONS: [string, string][] = [
   ["commonsstack.org", "mycopunk.xyz"],
   ["commonsstack.org", "rfunds.online"],
   ["commonsstack.org", "nofi.lol"],
-  ["commonsstack.org", "tecommons.org"],
-  ["commonsstack.org", "giveth.io"],
   ["rfunds.online", "mycofi.earth"],
   ["nofi.lol", "mycofi.earth"],
   ["rstack.org", "yourspace.online"],
   ["rstack.org", "undernet.earth"],
   ["wiki.p2pfoundation.net", "post-appitalist.app"],
-  ["wiki.p2pfoundation.net", "enspiral.com"],
   ["mycofi.earth", "mycopunk.xyz"],
-  ["mycofi.earth", "grassrootseconomics.org"],
   ["undernet.earth", "psilo-cyber.net"],
   ["compostcapitalism.xyz", "post-appitalist.app"],
   ["post-appitalist.app", "yourspace.online"],
   ["yourspace.online", "trippinballs.lol"],
   ["mycopunk.xyz", "psilo-cyber.net"],
   ["mycopunk.xyz", "undernet.earth"],
-  ["giveth.io", "rfunds.online"],
-  ["tecommons.org", "mycofi.earth"],
-  ["enspiral.com", "giveth.io"],
-  ["grassrootseconomics.org", "yourspace.online"],
 ]
 
 function getNode(domain: string) {
-  return ALL_NODES.find((n) => n.domain === domain)
+  return NODES.find((n) => n.domain === domain)
 }
 
 export function NetworkMapSection() {
@@ -222,7 +180,7 @@ export function NetworkMapSection() {
           </h2>
           <p className="text-lg sm:text-xl opacity-70 max-w-2xl mx-auto">
             Every node strengthens the whole. Every connection multiplies
-            possibility. Building alongside allies who share the vision.
+            possibility.
           </p>
         </div>
 
@@ -256,7 +214,7 @@ export function NetworkMapSection() {
             </svg>
 
             {/* Node cards */}
-            {ALL_NODES.map((node) => {
+            {NODES.map((node) => {
               const isActive = hovered === node.domain
               const connected = isConnected(node.domain)
               const dimmed = hovered && !isActive && !connected
@@ -303,7 +261,7 @@ export function NetworkMapSection() {
 
         {/* Mobile: Simple card list */}
         <div className="section-reveal md:hidden grid gap-3 grid-cols-1 sm:grid-cols-2">
-          {ALL_NODES.map((node, i) => (
+          {NODES.map((node, i) => (
             <a
               key={node.domain}
               href={`https://${node.domain}`}
