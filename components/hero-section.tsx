@@ -88,18 +88,11 @@ export function HeroSection() {
           className="emerge-letter text-xl sm:text-2xl md:text-3xl font-serif font-light tracking-wide opacity-80"
           style={{ animationDelay: "1.2s" }}
         >
-          Rebooting the Commons Stack.
+          Rebooting the legacy of the Commons Stack.
           <br />
-          Emerging from the soil.
-        </p>
-
-        {/* Lineage */}
-        <p
-          className="emerge-letter text-sm sm:text-base opacity-40 max-w-xl mx-auto"
-          style={{ animationDelay: "1.5s" }}
-        >
-          Rooted in the Commons Stack. Nourished by the P2P Foundation.
-          Propagating the P4P (peer-for-peer) movement.
+          Preserving the legacy of the P2P Foundation.
+          <br />
+          The P4P (Peer-for-Peer) Movement, emerging from the soil.
         </p>
 
         {/* Cycling terminal tagline */}
