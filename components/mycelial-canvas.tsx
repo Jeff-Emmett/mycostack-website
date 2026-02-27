@@ -229,25 +229,6 @@ export function MycelialCanvas() {
           ctx.fill()
         }
 
-        // Draw faint connections between nearby hyphae tips
-        if (ageRatio < 0.5 && hypha.depth < 3) {
-          for (const other of alive) {
-            if (other === hypha) continue
-            const ox = other.x - hypha.x
-            const oy = other.y - hypha.y
-            const od = Math.sqrt(ox * ox + oy * oy)
-            if (od < 80 && od > 10) {
-              const connOpacity = 0.06 * (1 - od / 80)
-              ctx.strokeStyle = accent.replace(")", ` / ${connOpacity})`)
-              ctx.lineWidth = 0.5
-              ctx.beginPath()
-              ctx.moveTo(hypha.x, hypha.y)
-              ctx.lineTo(other.x, other.y)
-              ctx.stroke()
-            }
-          }
-        }
-
         // Branching
         if (
           hypha.age > 25 &&
@@ -263,6 +244,54 @@ export function MycelialCanvas() {
         }
 
         alive.push(hypha)
+      }
+
+      // Connection lines + energy pulse at interconnected nodes
+      const time = Date.now() * 0.002
+      for (let i = 0; i < alive.length; i++) {
+        const hypha = alive[i]
+        const ageRatio = hypha.age / hypha.maxAge
+        if (ageRatio > 0.5 || hypha.depth >= 3) continue
+
+        let connectionCount = 0
+        for (let j = i + 1; j < alive.length; j++) {
+          const other = alive[j]
+          const otherAge = other.age / other.maxAge
+          if (otherAge > 0.5 || other.depth >= 3) continue
+
+          const dx = other.x - hypha.x
+          const dy = other.y - hypha.y
+          const dist = Math.sqrt(dx * dx + dy * dy)
+
+          if (dist < 80 && dist > 10) {
+            connectionCount++
+            const connOpacity = 0.06 * (1 - dist / 80)
+            ctx.strokeStyle = accent.replace(")", ` / ${connOpacity})`)
+            ctx.lineWidth = 0.5
+            ctx.beginPath()
+            ctx.moveTo(hypha.x, hypha.y)
+            ctx.lineTo(other.x, other.y)
+            ctx.stroke()
+          }
+        }
+
+        // Pulse glow at nodes with multiple connections
+        if (connectionCount > 0) {
+          const pulse = 0.5 + 0.5 * Math.sin(time + hypha.x * 0.01 + hypha.y * 0.008)
+          const intensity = Math.min(connectionCount / 4, 1) * pulse
+          const radius = 6 + connectionCount * 3
+
+          const gradient = ctx.createRadialGradient(
+            hypha.x, hypha.y, 0,
+            hypha.x, hypha.y, radius
+          )
+          gradient.addColorStop(0, accent.replace(")", ` / ${intensity * 0.15})`))
+          gradient.addColorStop(1, accent.replace(")", ` / 0)`))
+          ctx.fillStyle = gradient
+          ctx.beginPath()
+          ctx.arc(hypha.x, hypha.y, radius, 0, Math.PI * 2)
+          ctx.fill()
+        }
       }
 
       // Spore particles

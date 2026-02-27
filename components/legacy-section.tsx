@@ -7,8 +7,6 @@ export function LegacySection() {
 
   return (
     <section ref={sectionRef} className="relative py-20 px-6 noise-overlay">
-      <div className="mycelial-divider mb-12" />
-
       <div className="max-w-4xl mx-auto space-y-16">
         {/* Header */}
         <div className="section-reveal space-y-4 text-center">
@@ -52,6 +50,61 @@ export function LegacySection() {
               Trusted Seed wasn&rsquo;t just a token-holder registry; it was an
               experiment in building trust at the speed of consensus. From this
               root system, the MycoStack grows outward.
+            </p>
+          </div>
+
+          {/* Commons Stack Toolkit */}
+          <div className="glass-card p-6 sm:p-8 space-y-4">
+            <h4 className="font-serif text-lg font-semibold opacity-70">
+              The Commons Stack Toolkit
+            </h4>
+            <div className="grid gap-4 sm:grid-cols-3 text-sm">
+              <div className="space-y-2">
+                <div className="font-serif text-base font-semibold">
+                  Augmented Bonding Curve
+                </div>
+                <p className="opacity-70 leading-relaxed">
+                  A continuous funding mechanism that aligns contributor and
+                  community incentives. Tokens minted into a bonding curve with
+                  a built-in reserve &mdash; ensuring every project starts with
+                  a funding floor, not a funding cliff.
+                </p>
+              </div>
+              <div className="space-y-2">
+                <div className="font-serif text-base font-semibold">
+                  Conviction Voting
+                </div>
+                <p className="opacity-70 leading-relaxed">
+                  Governance by sustained preference rather than snapshot
+                  majority. Stake accumulates over time &mdash; the longer you
+                  signal support, the stronger your conviction. Proposals pass
+                  through collective patience, not political campaigns.
+                </p>
+              </div>
+              <div className="space-y-2">
+                <div className="font-serif text-base font-semibold">
+                  Computer-Aided Governance
+                </div>
+                <p className="opacity-70 leading-relaxed">
+                  Built on{" "}
+                  <a
+                    href="https://cadcad.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="domain-link"
+                  >
+                    cadCAD
+                  </a>
+                  &rsquo;s complex systems simulation framework. Model
+                  governance proposals before deploying them &mdash; test
+                  incentive structures, stress-test token economies, and
+                  simulate emergent behavior in silico.
+                </p>
+              </div>
+            </div>
+            <p className="text-xs opacity-40 pt-1">
+              These tools are the root enzymes of the MycoStack &mdash;
+              breaking down coordination problems into solvable substrates.
             </p>
           </div>
         </div>

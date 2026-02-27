@@ -170,8 +170,6 @@ export function NoFiSection() {
 
   return (
     <section ref={sectionRef} className="relative py-20 px-6 noise-overlay" style={{ background: "oklch(0.14 0.02 140 / 0.9)" }}>
-      <div className="mycelial-divider mb-12" />
-
       <div className="max-w-5xl mx-auto space-y-14">
         {/* Ecosystem header */}
         <div className="section-reveal space-y-6 text-center">
@@ -368,8 +366,6 @@ export function NoFiSection() {
         </blockquote>
 
         {/* Network Map */}
-        <div className="mycelial-divider" />
-
         <div className="section-reveal space-y-4 text-center">
           <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold">
             The Network of Networks

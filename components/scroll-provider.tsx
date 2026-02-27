@@ -8,15 +8,15 @@ import { useEffect } from "react"
 // Background stays in the 0.20-0.24 range (dark forest floor).
 // Light text throughout. Hue drifts gently through greens and teals.
 const COLOR_STOPS: number[][] = [
-  [0.0,  0.20, 0.03, 140,  0.93, 0.02, 130,  0.58, 0.12, 145],  // Hero: mossy green
-  [0.10, 0.21, 0.035, 135,  0.93, 0.02, 135,  0.56, 0.13, 140],  // Legacy: deep fern
-  [0.18, 0.22, 0.04, 130,  0.92, 0.02, 125,  0.55, 0.14, 130],  // Compost: warm moss
-  [0.30, 0.22, 0.045, 150,  0.93, 0.02, 150,  0.58, 0.15, 155],  // Mycelium: forest green
-  [0.42, 0.21, 0.04, 170,  0.93, 0.02, 170,  0.55, 0.13, 175],  // Undernet: deep teal-green
-  [0.52, 0.22, 0.04, 160,  0.93, 0.02, 155,  0.57, 0.14, 160],  // Anastomosis: fern blend
-  [0.62, 0.21, 0.035, 145,  0.92, 0.02, 140,  0.55, 0.13, 148],  // NoFi: returning green
-  [0.75, 0.23, 0.04, 135,  0.93, 0.02, 130,  0.58, 0.14, 135],  // Emergence: bright moss
-  [0.90, 0.22, 0.035, 145,  0.93, 0.02, 140,  0.56, 0.13, 150],  // Network Map: canopy green
+  [0.0,  0.22, 0.03, 140,  0.93, 0.02, 130,  0.58, 0.12, 145],  // Hero: mossy green
+  [0.10, 0.23, 0.035, 135,  0.93, 0.02, 135,  0.56, 0.13, 140],  // Legacy: deep fern
+  [0.18, 0.24, 0.04, 130,  0.92, 0.02, 125,  0.55, 0.14, 130],  // Compost: warm moss
+  [0.30, 0.24, 0.045, 150,  0.93, 0.02, 150,  0.58, 0.15, 155],  // Mycelium: forest green
+  [0.42, 0.23, 0.04, 170,  0.93, 0.02, 170,  0.55, 0.13, 175],  // Undernet: deep teal-green
+  [0.52, 0.24, 0.04, 160,  0.93, 0.02, 155,  0.57, 0.14, 160],  // Anastomosis: fern blend
+  [0.62, 0.23, 0.035, 145,  0.92, 0.02, 140,  0.55, 0.13, 148],  // NoFi: returning green
+  [0.75, 0.25, 0.04, 135,  0.93, 0.02, 130,  0.58, 0.14, 135],  // Emergence: bright moss
+  [0.90, 0.24, 0.035, 145,  0.93, 0.02, 140,  0.56, 0.13, 150],  // Network Map: canopy green
 ]
 
 function lerp(a: number, b: number, t: number) {

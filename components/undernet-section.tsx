@@ -21,8 +21,6 @@ export function UndernetSection() {
 
   return (
     <section ref={sectionRef} className="relative py-20 px-6 noise-overlay">
-      <div className="mycelial-divider mb-12" />
-
       <div className="max-w-5xl mx-auto space-y-16">
         <div className="section-reveal space-y-4 text-center">
           <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold">

@@ -5,7 +5,7 @@
 
 :root {
   /* Scroll-driven dynamic colors (set by JS) */
-  --scroll-bg: oklch(0.20 0.03 140);
+  --scroll-bg: oklch(0.22 0.03 140);
   --scroll-fg: oklch(0.93 0.02 130);
   --scroll-accent: oklch(0.58 0.12 145);
   --scroll-depth: 0;
