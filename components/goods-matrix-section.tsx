@@ -49,8 +49,8 @@ export function GoodsMatrixSection() {
   const sectionRef = useSectionReveal()
 
   return (
-    <section ref={sectionRef} className="relative py-32 px-6 noise-overlay">
-      <div className="mycelial-divider mb-20" />
+    <section ref={sectionRef} className="relative py-20 px-6 noise-overlay">
+      <div className="mycelial-divider mb-12" />
 
       <div className="max-w-4xl mx-auto space-y-16">
         <div className="section-reveal space-y-4 text-center">

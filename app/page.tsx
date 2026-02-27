@@ -8,7 +8,6 @@ import { UndernetSection } from "@/components/undernet-section"
 import { AnastomosisSection } from "@/components/anastomosis-section"
 import { NoFiSection } from "@/components/nofi-section"
 import { EmergenceSection } from "@/components/emergence-section"
-import { NetworkMapSection } from "@/components/network-map-section"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -25,7 +24,6 @@ export default function Home() {
         <AnastomosisSection />
         <NoFiSection />
         <EmergenceSection />
-        <NetworkMapSection />
       </main>
       <Footer />
     </div>
